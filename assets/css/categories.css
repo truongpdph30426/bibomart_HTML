@@ -56,6 +56,10 @@ button input {
     background: #F6F6F6;
 }
 
+.bg-gray-400 {
+    background: #F9F9F9;
+}
+
 .border-btn-gray {
     border: 1px solid #EAEAEA
 }
@@ -148,17 +152,23 @@ input[type='checkbox']:checked::after {
 }
 
 .menu-2>li:hover>a>span,
-.menu-3>li:hover>a>span {
+.menu-3>li:hover>a>span,
+.bread-crumb>ul>li:hover>a>span {
     font-weight: 500;
-    color: #333333;
+    color: rgb(236, 77, 77);
 }
 
 .bread-crumb:hover ul {
     display: block !important;
 }
 
-.bread-crumb>ul {
-    min-width: 150px !important;
+.bread-crumb ul {
+    min-width: 200px !important;
+    left: -15px;
+}
+
+.bread-crumb ul li {
+    padding: 6px 0; 
 }
 
 .custom-scroll {
@@ -168,11 +178,9 @@ input[type='checkbox']:checked::after {
 .custom-scroll::-webkit-scrollbar {
     width: 5px;
 }
-
 .custom-scroll::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
-
 .custom-scroll::-webkit-scrollbar-thumb {
     background: #c5c5c5;
     height: 20px;
@@ -184,6 +192,6 @@ input[type='checkbox']:checked::after {
 }
 
 .li-active>a>span {
-    font-weight: 500;
+    font-weight: 600;
     color: black;
 }
