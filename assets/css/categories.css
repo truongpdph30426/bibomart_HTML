@@ -52,6 +52,14 @@ button input {
     font-size: 18px;
 }
 
+.bg-gray-500 {
+    background: #F6F6F6;
+}
+
+.border-btn-gray {
+    border: 1px solid #EAEAEA
+}
+
 .bg-gray-600 {
     background: #999797;
 }
