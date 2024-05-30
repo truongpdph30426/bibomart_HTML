@@ -1,0 +1,8 @@
+.menu--hover:hover span{
+    color: #DD354B;
+} 
+
+
+.menu>li:hover .custom-menu-2{
+    display: block !important;
+}

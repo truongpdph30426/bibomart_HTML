@@ -1,0 +1,2254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://db.onlinewebfonts.com/c/c308bda9ff13c5239c99b48dc147bde0?family=SF+Pro+Rounded" rel="stylesheet"
+        type="text/css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Danh mục sản phầm</title>
+    <link rel="stylesheet" href="./assets/css/categories.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="header position-sticky top-0 z-3">
+        <div class="header__top">
+            <div class="header__top--content m-auto">
+                <div class="row row--maint w-100 h-100 m-0">
+                    <div class="col-6 p-0 my-auto">
+                        <div class="float-start d-flex flex-row">
+                            <div class="my-auto"><a href=""><i class="bi bi-telephone"></i>Hotline <span
+                                        class="text--danger">1800 68 68</span> (miễn phí)</a></div>
+                            <div class="thanh my-auto mx-2"></div>
+                            <div class="my-auto"><a href=""><i class="fa-solid fa-location-dot mx-1"></i>Tìm siêu
+                                    thị</a></div>
+                        </div>
+                    </div>
+                    <div class="col-6 p-0 my-auto">
+                        <div class="float-end d-flex flex-row">
+                            <div class="my-auto"><a href="">Tải ứng dụng</a></div>
+                            <div class="thanh my-auto mx-2"></div>
+                            <div class="my-auto"><a href="">Đăng nhập</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__middle bg-white">
+            <div class="header__middle--content m-auto">
+                <div class="row row--maint m-0 w-100 h-auto">
+                    <div class="col-2 p-0 my-auto">
+                        <div class="w-100 h-100">
+                            <a href=""><img src="./assets/image/logo.webp" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-8 p-0 my-auto">
+                        <div class="">
+                            <div class="row m-0 p-3">
+                                <div class="col-11 p-0 ">
+                                    <input class="input--serch w-100 py-2 px-3" type="text"
+                                        placeholder="Ba mẹ cần tìm gì cho bé hôm nay?">
+                                </div>
+                                <div class="button--serch col-1 p-0">
+                                    <a href="">
+                                        <div class="text-white h-100 d-flex justify-content-center align-items-center ">
+                                            <i class="bi bi-search"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 p-0 my-auto">
+                        <div class="d-flex justify-content-around">
+                            <div class="my-auto text-center position-relative">
+                                <a href=""><img class="icon mx-1" src="./assets/image/cart_head.svg" alt="" />Giỏ
+                                    hàng</a>
+                                <div
+                                    class="number--cart position-absolute bg-danger text-white d-flex justify-content-center align-items-center">
+                                    5</div>
+                            </div>
+                            <div class="thanh mx-2 my-auto"></div>
+                            <div class="my-auto text-center"><a href=""><img class="icon mx-1"
+                                        src="./assets/image/noti.svg" alt="" />Thông báo</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner row px-10 mw-1520">
+        <div class="col-12 p-0 mb-2 mt-3">
+            <div>
+                <ul class="d-flex">
+                    <li><a href="#"><span class="me-2">Trang chủ <i
+                                    class="bi bi-chevron-right ms-2 fs-6"></i></span></a>
+                    </li>
+                    <li class="px-1 bread-crumb position-relative text-wrap"><span class=" text-gray-300 d-flex">Đồ
+                            dùng mẹ và bé<i class="bi bi-chevron-right ms-2 fs-6"></i></span>
+                        <ul class="position-absolute py-3 w-100 bg-white d-none">
+                            <li class="py-2 ps-2 text-truncate"><a href="#"><span>Sữa cho bé</span></a></li>
+                            <li class="py-2 ps-2 text-truncate"><a href="#"><span>Bỉm tã & vệ sinh</span></a></li>
+                            <li class="py-2 ps-2 text-truncate"><a href="#"><span>Bình sữa & phụ kiện</span></a></li>
+                            <li class="py-2 ps-2 text-truncate"><a href="#"><span>Ăn dặm cho bé</span></a></li>
+                            <li class="py-2 ps-2 text-truncate"><a href="#"><span>Đồ sơ sinh</span></a></li>
+                            <li class="py-2 ps-2 text-truncate"><a href="#"><span>Thời trang & phụ kiện</span></a></li>
+                            <li class="py-2 ps-2 text-truncate"><a href="#"><span>Bé chơi & học</span></a></li>
+                            <li class="py-2 ps-2 text-truncate"><a href="#"><span>Mẹ bầu & sau sinh</span></a></li>
+                            <li class="py-2 ps-2 text-truncate"><a href="#"><span>Vitamin & sức khỏa</span></a></li>
+                            <li class="py-2 ps-2 text-truncate"><a href="#"><span>Chăm sóc gia đình</span></a></li>
+                            <li class="py-2 ps-2 text-truncate"><a href="#"><span>Xe cho bé</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="px-1 bread-crumb position-relative text-wrap"><span
+                            class=" text-gray-300 d-flex">Thiết bị bảo vệ an toàn<i
+                                class="bi bi-chevron-right ms-2 fs-6"></i></span>
+                        <ul class="position-absolute py-3 bg-white w-100 bg-white d-none">
+                            <li class="py-2 ps-2 text-truncate"><a href="#"><span>Đồ dùng cho bé ăn dặm</span></a></li>
+                            <li class="py-2 ps-2 text-truncate"><a href="#"><span>Dụng cụ chế biến ăn dặm</span></a></li>
+                            <li class="py-2 ps-2 text-truncate"><a href="#"><span>Vệ sinh cá nhân cho bé</span></a></li>
+                            <li class="py-2 ps-2 text-truncate"><a href="#"><span>Đồ dùng bé ngủ</span></a></li>
+                            <li class="py-2 ps-2 text-truncate"><a href="#"><span>Các loại máy</span></a></li>
+                            <li class="py-2 ps-2 text-truncate"><a href="#"><span>Đồ dùng bé tắm</span></a></li>
+                            <li class="py-2 ps-2 text-truncate"><a href="#"><span>Địu - Đai cho bé</span></a></li>
+                            <li class="py-2 ps-2 text-truncate"><a href="#"><span>Chăm sóc da cho bé</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="px-1 bread-crumb position-relative text-wrap"><span
+                            class="fw-semibold text-gray-300 d-flex">Bịt góc bàn</span>
+                        <ul class="position-absolute py-3 bg-white w-100 bg-white d-none">
+                            <li class="py-2 ps-2 text-wrap"><a href="#"><span>Ghế tập ngồi</span></a></li>
+                            <li class="py-2 ps-2 text-wrap"><a href="#"><span>Bịt đầu gối</span></a></li>
+                            <li class="py-2 ps-2 text-wrap"><a href="#"><span>Bịt ổ điện</span></a></li>
+                            <li class="py-2 ps-2 text-wrap"><a href="#"><span>Khóa ngăn kéo - tủ lạnh</span></a></li>
+                            <li class="py-2 ps-2 text-wrap"><a href="#"><span>Mũ bảo hiểm trẻ em</span></a></li>
+                            <li class="py-2 ps-2 text-wrap"><a href="#"><span>Dây dắt tâpj đi</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 p-0">
+            <div class="my-2">
+                <img class="w-100" src="./assets/image/banner.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="content row px-10 mw-1520 py-3 mb-4">
+        <!-- sidebar -->
+        <div class="col-2 p-0">
+            <div class="text-end border-1 border-bottom py-3">
+                <a href="#"><span class="text-gray-400">Xóa tất cả <i class="bi bi-trash"></i></span></a>
+            </div>
+            <div class="text-start border-1 border-bottom pt-3 pb-4">
+                <span class="bg-gray-300 py-2 px-3">Chong chóng <i class="bi bi-x fs-5 ms-2"></i></span>
+            </div>
+            <div>
+                <div class="mt-2"><a href="#"
+                        class="d-flex justify-content-between px-2 bg-gray-300 py-2 align-items-center"><span>Nhóm
+                            sản phẩm</span> <i class="bi bi-chevron-up ms-2 fs-5"></i></a></div>
+                <ul class="p-0 mt-2 menu-1">
+                    <li class="fs-14 fw-medium my-3 li-active">
+                        <span>
+                            <i class="bi bi-chevron-down me-1"></i>
+                            Đồ dùng mẹ và bé
+                        </span>
+                        <ul class="p-0 menu-2">
+                            <li class="py-2 ms-2 li-active">
+                                <a href="#">
+                                    <span class="fs-14">
+                                        <i class="bi bi-chevron-right me-1"></i>Đồ dùng cho bé ăn dặm
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="py-2 ms-2">
+                                <a href="#">
+                                    <span class="fs-14">
+                                        <i class="bi bi-chevron-right me-1"></i>Dụng cụ chế biến ăn dặm
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="py-2 ms-2">
+                                <a href="#">
+                                    <span class="fs-14">
+                                        <i class="bi bi-chevron-right me-1"></i>Vệ sinh cá nhân cho bé
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="py-2 ms-2">
+                                <a href="#">
+                                    <span class="fs-14">
+                                        <i class="bi bi-chevron-right me-1"></i>Đồ dùng bé ngủ
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="py-2 ms-2">
+                                <a href="#">
+                                    <span class="fs-14">
+                                        <i class="bi bi-chevron-right me-1"></i>Các loại máy
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="py-2 ms-2">
+                                <a href="#">
+                                    <span class="fs-14">
+                                        <i class="bi bi-chevron-right me-1"></i>Đồ dùng bé tắm
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="py-2 ms-2">
+                                <a href="#">
+                                    <span class="fs-14"><i class="bi bi-chevron-right me-1"></i>Địu - Đai cho bé
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="py-2 ms-2">
+                                <a href="#">
+                                    <span class="fs-14">
+                                        <i class="bi bi-chevron-right me-1"></i>Thiết bị bảo vệ an toàn
+                                    </span>
+                                </a>
+                                <ul class="menu-3 ps-3">
+                                    <li class="py-2 ms-2 li-active">
+                                        <a href="#">
+                                            <span class="fs-14">
+                                                Ghế tập ngồi
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="py-2 ms-2"><a href="#"><span class="fs-14">Bịt đầu gối</span></a></li>
+                                    <li class="py-2 ms-2"><a href="#"><span class="fs-14">Bịt góc bàn</span></a></li>
+                                    <li class="py-2 ms-2"><a href="#"><span class="fs-14">Bịt ổ điện</span></a></li>
+                                    <li class="py-2 ms-2"><a href="#"><span class="fs-14">Khóa ngăn kéo - tủ
+                                                lạnh</span></a></li>
+                                    <li class="py-2 ms-2"><a href="#"><span class="fs-14">Mũ bảo hiểm trẻ em</span></a>
+                                    </li>
+                                    <li class="py-2 ms-2"><a href="#"><span class="fs-14">Dây dắt tập đi</span></a></li>
+                                </ul>
+                            <li class="py-2 ms-2"><a href="#"><span class="fs-14"><i class="bi bi-chevron-right me-1"></i>Chăm sóc da cho bé</span></a></li>
+                    </li>
+                    <!-- <li class="d-flex justify-content-center"><a href="#"><i
+                                        class="bi bi-chevron-down fs-5"></i></a></li> -->
+                </ul>
+                </li>
+                </ul>
+            </div>
+            <div>
+                <a href="#" class="d-flex justify-content-between px-2 bg-gray-300 py-2 align-items-center"><span>Khoảng
+                        giá</span></a>
+                <div class="d-flex justify-content-between"><span>0đ</span> <span>4,500,000đ</span></div>
+                <div class="d-flex align-items-center my-3">
+                    <input type="range" id="range-min" min="0" max="4500000" step="1000" value="0">
+                    <input type="range" id="range-max" min="0" max="4500000" step="1000" value="4500000">
+                </div>
+            </div>
+            <div>
+                <a href="#" class="d-flex justify-content-between px-2 bg-gray-300 py-2 align-items-center"><span>Thương
+                        hiệu</span> <i class="bi bi-chevron-up ms-2 fs-5"></i></a>
+                <ul class="p-0 mt-2 custom-scroll overflow-y-scroll">
+                    <ul class="p-0">
+                        <li class="py-2 ms-2 d-flex"><input type="checkbox" name="thuong_hieu" class="me-2"
+                                id="thuong_hieu">
+                            <div class="d-flex justify-content-between w-100 px-2"><label for="thuong_hieu">Chong
+                                    chóng</label> <span class="fs-12 text-gray-300">(10)</span></div>
+                        </li>
+                        <li class="py-2 ms-2 d-flex"><input type="checkbox" name="thuong_hieu" class="me-2"
+                                id="thuong_hieu2">
+                            <div class="d-flex justify-content-between w-100 px-2"><label
+                                    for="thuong_hieu2">Bibo's</label> <span class="fs-12 text-gray-300">(10)</span>
+                            </div>
+                        </li>
+                        <li class="py-2 ms-2 d-flex"><input type="checkbox" name="thuong_hieu" class="me-2"
+                                id="thuong_hieu3">
+                            <div class="d-flex justify-content-between w-100 px-2"><label
+                                    for="thuong_hieu3">Nous</label> <span class="fs-12 text-gray-300">(10)</span></div>
+                        </li>
+                        <li class="py-2 ms-2 d-flex"><input type="checkbox" name="thuong_hieu" class="me-2"
+                                id="thuong_hieu4">
+                            <div class="d-flex justify-content-between w-100 px-2"><label
+                                    for="thuong_hieu4">Rabi</label> <span class="fs-12 text-gray-300">(10)</span></div>
+                        </li>
+                        <li class="py-2 ms-2 d-flex"><input type="checkbox" name="thuong_hieu" class="me-2"
+                                id="thuong_hieu5">
+                            <div class="d-flex justify-content-between w-100 px-2"><label
+                                    for="thuong_hieu5">Momma</label> <span class="fs-12 text-gray-300">(10)</span></div>
+                        </li>
+                        <li class="py-2 ms-2 d-flex"><input type="checkbox" name="thuong_hieu" class="me-2"
+                                id="thuong_hieu6">
+                            <div class="d-flex justify-content-between w-100 px-2"><label
+                                    for="thuong_hieu6">Nous</label> <span class="fs-12 text-gray-300">(10)</span></div>
+                        </li>
+                        <li class="py-2 ms-2 d-flex"><input type="checkbox" name="thuong_hieu" class="me-2"
+                                id="thuong_hieu7">
+                            <div class="d-flex justify-content-between w-100 px-2"><label
+                                    for="thuong_hieu7">Rabi</label> <span class="fs-12 text-gray-300">(10)</span></div>
+                        </li>
+                        <li class="py-2 ms-2 d-flex"><input type="checkbox" name="thuong_hieu" class="me-2"
+                                id="thuong_hieu8">
+                            <div class="d-flex justify-content-between w-100 px-2"><label
+                                    for="thuong_hieu8">Momma</label> <span class="fs-12 text-gray-300">(10)</span></div>
+                        </li>
+                        <li class="py-2 ms-2 d-flex"><input type="checkbox" name="thuong_hieu" class="me-2"
+                                id="thuong_hieu9">
+                            <div class="d-flex justify-content-between w-100 px-2"><label
+                                    for="thuong_hieu9">Nous</label> <span class="fs-12 text-gray-300">(10)</span></div>
+                        </li>
+                        <li class="py-2 ms-2 d-flex"><input type="checkbox" name="thuong_hieu" class="me-2"
+                                id="thuong_hieu10">
+                            <div class="d-flex justify-content-between w-100 px-2"><label
+                                    for="thuong_hieu10">Rabi</label> <span class="fs-12 text-gray-300">(10)</span></div>
+                        </li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="p-0 mt-2">
+                    <li><a href="#"
+                            class="d-flex justify-content-between px-2 bg-gray-300 py-2 align-items-center"><span>Màu
+                                sắc</span> <i class="bi bi-chevron-up ms-2 fs-5"></i></a>
+                        <ul class="p-0">
+                            <li class="py-2 ms-2 d-flex"><input type="checkbox" name="thuong_hieu" class="me-2" id="">
+                                <div class="d-flex justify-content-between w-100 px-2"><span>Xanh</span> <span
+                                        class="fs-12 text-gray-300">(10)</span></div>
+                            </li>
+                            <li class="py-2 ms-2 d-flex"><input type="checkbox" name="thuong_hieu" class="me-2" id="">
+                                <div class="d-flex justify-content-between w-100 px-2"><span>Đỏ</span> <span
+                                        class="fs-12 text-gray-300">(10)</span></div>
+                            </li>
+                            <li class="py-2 ms-2 d-flex"><input type="checkbox" name="thuong_hieu" class="me-2" id="">
+                                <div class="d-flex justify-content-between w-100 px-2"><span>Tím</span> <span
+                                        class="fs-12 text-gray-300">(10)</span></div>
+                            </li>
+                            <li class="py-2 ms-2 d-flex"><input type="checkbox" name="thuong_hieu" class="me-2" id="">
+                                <div class="d-flex justify-content-between w-100 px-2"><span>Vàng</span> <span
+                                        class="fs-12 text-gray-300">(10)</span></div>
+                            </li>
+                            <li class="py-2 ms-2 d-flex"><input type="checkbox" name="thuong_hieu" class="me-2" id="">
+                                <div class="d-flex justify-content-between w-100 px-2"><span>Nâu</span> <span
+                                        class="fs-12 text-gray-300">(10)</span></div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-10 p-0">
+            <div class="row ms-2">
+                <div class="col-12 py-0">
+                    <div class="d-flex bg-gray-300 px-2 py-3 justify-content-between">
+                        <div class="d-flex align-items-center ms-3">
+                            <span class="fs-12">129000 sản phẩm</span>
+                        </div>
+                        <div class="d-flex">
+                            <button class="bg-white border border-black py-1 px-4 mx-1 fs-12">Phù hợp</button>
+                            <button class="bg-white border-0 py-1 px-4 mx-1 fs-12">Bán chạy</button>
+                            <button class="bg-white border-0 py-1 px-4 mx-1 fs-12">Hàng mới</button>
+                            <button class="bg-white border-0 py-1 px-4 mx-1 fs-12">Giá thấp - cao</button>
+                            <button class="bg-white border-0 py-1 px-4 mx-1 fs-12">Giá cao - thấp</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 p-0 my-3">
+                    <div class="mant__content bg-white py-2 mx-2">
+                        <div class="mant__content--show position-relative overflow-hidden ">
+                            <div class="sale position-absolute px-1 mx-1 d-none">-15%</div>
+                            <a href="">
+                                <div class="position-relative w-100">
+                                    <div class="img_thumbnail w-100">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                    <div class="img_thumbnail position-absolute w-100 top-0">
+                                        <img class="w-100" src="./assets/image/anhsp.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="like position-absolute"><img class="icon" src="./assets/image/heart.svg" alt=""
+                                    onmouseover="this.src='./assets/image/heart_red.svg'"
+                                    onmouseout="this.src='./assets/image/heart.svg'"></div>
+                            <div class="bixu position-absolute px-1 mx-1 text-truncate">Tặng 2.000 Bixu</div>
+                        </div>
+                        <div class="mant__content--info px-2">
+                            <a href="">
+                                <div class="name fs-14">
+                                    Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...
+                                </div>
+                            </a>
+                            <div class="row m-0">
+                                <div class="col-11 p-0">
+                                    <div class="row m-0">
+                                        <div class="col-4 p-0 my-auto me-1">
+                                            <div class="price fw-semibold fs-14">
+                                                299.000<span class="text-decoration-underline fw-semibold">đ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 p-0 my-auto">
+                                            <div class="price--sale text-start text-decoration-line-through fs-14">
+                                                200.000<span class="text-decoration-underline">đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 p-0">
+                                    <div class="cart position-relative float-end">
+                                        <div class="img_cart "><img class="icon" src="./assets/image/cart.svg" alt="">
+                                        </div>
+                                        <div class="img_cart position-absolute top-0 start-0"><img class="icon"
+                                                src="./assets/image/cart_red.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 p-0 my-3">
+                    <div class="d-flex justify-content-center">
+                        <button class="btn rounded-2 mx-1 border prev btn-sm px-3 py-2"><i
+                                class="bi bi-chevron-left"></i></button>
+                        <button
+                            class="btn btn-hover-secondary rounded-2 mx-1 btn-secondary btn-sm text-center px-3 py-1">1</button>
+                        <button class="btn btn-hover-secondary rounded-2 mx-1 btn-sm text-center px-3 py-1">2</button>
+                        <button class="btn btn-hover-secondary rounded-2 mx-1 btn-sm text-center px-3 py-1">3</button>
+                        <button class="btn btn-hover-secondary rounded-2 mx-1 btn-sm text-center px-3 py-1">4</button>
+                        <button class="btn btn-hover-secondary rounded-2 mx-1 btn-sm text-center px-3 py-1">5</button>
+                        <button class="btn rounded-2 mx-1 border next btn-sm px-3 py-2"><i
+                                class="bi bi-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="col-12 px-0 py-3 position-relative mb-2">
+                    <div class="description position-relative">
+                        <h4 class="fs-18 fw-bold">Mách mẹ cách lựa chọn đồ cho bé đi ra ngoài</h4>
+                        <p class="fs-14 fw-medium">
+                            &nbsp;&nbsp; Trước đây, những bậc cha mẹ có trẻ nhỏ dưới rất ngại đi chơi xa, bởi mỗi lần đi
+                            là
+                            lỉnh kỉnh
+                            nào cháo, nào bột, nào đồ dùng thiết yếu, nào sợ con ốm, sợ con mệt... Tuy nhiên, thực ra
+                            cho bé đi cùng gia đình cũng rất đơn giản nếu cha mẹ có một sự chuẩn bị kỹ càng từ ban đầu.
+                            Những lựa chọn thông minh sau đây sẽ giúp cho những lần đi ra ngoài của bé và gia đình gọn
+                            gàng và dễ dàng hơn rất nhiều.
+                             
+                            Điều quan tâm nhất của các bậc phụ huynh khi cho con nhỏ đi xa, hoặc đi ra ngoài cùng mọi
+                            người đó là độ an toàn khi ngồi trên xe để tránh va đập hoặc khiến trẻ nhỏ khó chịu, mệt
+                            mỏi, các bà mẹ phải cần chú ý khi cho con nhỏ đi ra ngoài thì yếu tố an toàn đạt lên hàng
+                            đầu vì thế những phụ kiện cho bé như địu trẻ em, xe đẩy cho bé, ghế xe máy, ghế ô tô... là
+                            những lựa chọn hữu hiệu nhất dành cho mọi gia đình. 
+                        </p>
+
+
+                        <h4 class="fs-18 fw-bold">Thời kỳ sơ sinh</h4>
+                        <p class="fs-14 fw-medium">
+                            Đây là giai đoạn bé từ 0 đến 9 tháng tuổi, các bộ phận trên cơ thể còn yếu ớt. Bạn muốn cho
+                            bé
+                            ra ngoài tắm nắng, đi dạo thì nên sắm cho bé một chiếc xe đẩy em bé có chế độ nằm hẳn, nằm
+                            nghiêng và ngồi để tốt nhất cho lưng và cổ của bé. Ngoài ra còn cần thêm 1 số món đồ như :
+                            Ghế
+                            ngồi ô tô, ghế rung...
+                             
+                            Hầu hết trẻ sơ sinh, trẻ nhỏ thường rất quấn mẹ, nhưng do công việc bạn thường xuyên phải di
+                            chuyển hoặc đưa đón bé đến trường hay đưa trẻ đi chơi xa cuối tuần. Hiều được mong muốn các
+                            bậc
+                            phụ huynh các nhà sản xuất đã cho ra đời những chiếc đai, địu giữ bé tiện dụng và an toàn.
+                        </p>
+                    </div>
+                    <div class="text-center position-absolute w-100 bottom-0">
+                        <button class="py-2 px-5 w-50 rounded-3 text-gray-400 border bg-white">Xem thêm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-white border border-top ">
+        <div class="footer bg-white">
+            <div class="maint__footer m-auto">
+                <div class="row row--maint m-0 pb-3 ">
+                    <div class="col-12 px-0">
+                        <div class="footer__top py-4">
+                            <div class="row m-0">
+                                <div class="col-3">
+                                    <div class="text-center"><img src="./assets/image/Layer_1.svg" alt=""></div>
+                                    <div class="content text-center text-capitalize my-1">
+                                        <div class="">100%</div>
+                                        <div class="">Hàng chính hãng</div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="text-center"><img src="./assets/image/Layer_1-1.svg" alt=""></div>
+                                    <div class="content text-center text-capitalize my-1 ">
+                                        <div class="">Giao nội thành</div>
+                                        <div class="">Siêu tốc 30 phút</div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="text-center"><img src="./assets/image/Layer_1-2.svg" alt=""></div>
+                                    <div class="content text-center text-capitalize my-1 ">
+                                        <div class="">Ưu đãi độc quyền</div>
+                                        <div class="">Tích xu đổi quà</div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="text-center"><img src="./assets/image/Layer_1-3.svg" alt=""></div>
+                                    <div class="content text-center text-capitalize my-1 ">
+                                        <div class="">Khuyến mãi ngập tràn</div>
+                                        <div class="">Hot deal vô tận</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 px-0">
+                        <div class="footer__middle">
+                            <div class="row m-0">
+                                <div class="col-3">
+                                    <div class="">
+                                        <div class="title my-4 text-uppercase fw-bold fs-16">VỀ BIBOMART</div>
+                                        <ul class="">
+                                            <li class="my-3"><a href="" class="content"><span>Giới thiệu</span></a></li>
+                                            <li class="my-3"><a href="" class="content"><span>Danh sách cửa
+                                                        hàng</span></a></li>
+                                            <li class="my-3"><a href="" class="content"><span>Cẩm nang cho mẹ</span></a>
+                                            </li>
+                                            <li class="my-3"><a href="" class="content"><span>Liên hệ</span></a></li>
+                                            <li class="my-3"><a href="" class="content"><span>Bảo mật thông tin cá
+                                                        nhân</span></a></li>
+                                            <li class="my-3"><a href="" class="content"><span>Sử dụng thông
+                                                        tin</span></a></li>
+                                            <li class="my-3"><a href="" class="content"><span>Bản tin tuyển
+                                                        dụng</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="">
+                                        <div class="title my-4 text-uppercase fw-bold fs-16">Hỗ trợ khách hàng</div>
+                                        <ul class="">
+                                            <li class="my-3"><a href="" class="content"><span>Hotline miễn phí: 1800
+                                                        6886</span></a></li>
+                                            <li class="my-3"><a href="" class="content"><span>Chính sách CSKH</span></a>
+                                            </li>
+                                            <li class="my-3"><a href="" class="content"><span>Hướng dẫn đổi quà từ
+                                                        Bixu</span></a></li>
+                                            <li class="my-3"><a href="" class="content"><span>CS đổi hàng và hoàn
+                                                        tiền</span></a></li>
+                                            <li class="my-3"><a href="" class="content"><span>Chính sách bảo
+                                                        hành</span></a></li>
+                                            <li class="my-3"><a href="" class="content"><span>Zalo & Hotline cửa
+                                                        hàng</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="">
+                                        <div class="title my-4 text-uppercase fw-bold fs-16">Hệ thống tiện ích</div>
+                                        <ul class="">
+                                            <li class="my-3"><a href="" class="content"><span>Tra cứu hóa đơn điện
+                                                        tử</span></a></li>
+                                            <li class="my-3"><a href="" class="content"><span>Kiểm tra đơn
+                                                        hàng</span></a></li>
+                                            <li class="my-3"><a href="" class="content"><span>Hướng dẫn đặt
+                                                        hàng</span></a></li>
+                                            <li class="my-3"><a href="#" class="content"><span
+                                                        class="text-uppercase fw-bold text-black fs-16">Phương thức
+                                                        thanh
+                                                        toán</span></a>
+                                                <div class="row my-2">
+                                                    <div class="col-sm-4 col-md-3 p-0 ">
+                                                        <div class="px-1 w-100">
+                                                            <img class="w-75" src="./assets/image/Frame 427320408.svg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-4 col-md-3 p-0 ">
+                                                        <div class="px-1 w-100">
+                                                            <img class="w-75"
+                                                                src="./assets/image/mastercard_icon.jpeg.svg" alt="">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-4 col-md-3 p-0 ">
+                                                        <div class="px-1 w-100">
+                                                            <img class="w-75" src="./assets/image/Frame 427320407.svg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-4 col-md-3 p-0 ">
+                                                        <div class="px-1 w-100">
+                                                            <img class="w-75" src="./assets/image/napas_icon.jpeg.svg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-4 col-md-3 p-0 ">
+                                                        <div class="px-1 w-100">
+                                                            <img class="w-75" src="./assets/image/cod 1.svg" alt="">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-4 col-md-3 p-0 ">
+                                                        <div class="px-1 w-100">
+                                                            <img class="w-75" src="./assets/image/Frame 427320410.svg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-4 col-md-3 p-0 ">
+                                                        <div class="px-1 w-100">
+                                                            <img class="w-75" src="./assets/image/zalopay_icon.jpeg.svg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-4 col-md-3 p-0 ">
+                                                        <div class="px-1 w-100">
+                                                            <img class="w-75" src="./assets/image/momo_logo.png.svg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </li>
+                                            <li class="my-3"><a href="" class="content"><span
+                                                        class="text-uppercase fw-bold text-black fs-16">Đối tác vận
+                                                        chuyển</span></a>
+                                                <div class="row mt-2">
+                                                    <div class="col-sm-4 col-md-3">
+                                                        <div class="px-1 w-100">
+                                                            <img class="w-100" src="./assets/image/Frame 427320406.svg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-4 col-md-3">
+                                                        <div class="px-1 w-100">
+                                                            <img class="w-100"
+                                                                src="./assets/image/viettel_post_icon.jpeg.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="">
+                                        <div class="title my-4 text-uppercase fw-bold"></div>
+                                        <div class="row row-gap-4 m-0">
+                                            <div class="col-12 p-0">
+                                                <div class="">
+                                                    <div class="title text-uppercase fw-bold fs-16">Kết nối với
+                                                        chúng tôi</div>
+                                                    <div class="row m-0 my-3">
+                                                        <div class="col-sm-4 col-md-3 col-lg-2 p-0">
+                                                            <div class=""><a href=""><img class="icon_footer"
+                                                                        src="./assets/image/Facebook.svg" alt=""></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-md-3 col-lg-2 p-0">
+                                                            <div class=""><a href=""><img class="icon_footer"
+                                                                        src="./assets/image/Tik Tok.svg" alt=""></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-md-3 col-lg-2 p-0">
+                                                            <div class=""><a href=""><img class="icon_footer"
+                                                                        src="./assets/image/Whatsapp.svg" alt=""></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-md-3 col-lg-2 p-0">
+                                                            <div class=""><a href=""><img class="icon_footer"
+                                                                        src="./assets/image/Youtube.svg" alt=""></a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-4 col-md-3 col-lg-2 p-0">
+                                                            <div class=""><a href=""><img class="icon_footer"
+                                                                        src="./assets/image/Youtube-1.svg" alt=""></a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-4 col-md-3 col-lg-2 p-0">
+                                                            <div class=""><a href=""><img class="icon_footer"
+                                                                        src="./assets/image/Youtube-2.svg" alt=""></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 p-0">
+                                                <div class="row m-0">
+                                                    <div class="mb-4 col-12 ps-0 text-uppercase fw-bold fs-16">Tải ứng
+                                                        dụng nhận
+                                                        ngay
+                                                        nhiều ưu
+                                                        đãi hấp
+                                                        dẫn</div>
+                                                    <div class="col-4 p-0 my-auto">
+                                                        <div class="w-100"><a href=""><img class="qr__footer"
+                                                                    class="w-100" src="./assets/image/Qr.png"
+                                                                    alt=""></a></div>
+                                                    </div>
+                                                    <div class="dowload__right col-8 my-auto">
+                                                        <div class="row row-gap-2 m-0 ">
+                                                            <div class="col-12 p-0">
+                                                                <div class="w-100">
+                                                                    <a href=""><img class="w-100"
+                                                                            src="./assets/image/apstore.png" alt=""></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 p-0">
+                                                                <div class="w-100 ">
+                                                                    <a href=""><img class="w-100"
+                                                                            src="./assets/image/chphay.png" alt=""></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 px-0">
+                        <div class="footer__bottom py-4">
+                            <div class="row row-gap-3 m-0">
+                                <div class="col-12">
+                                    <div class="row m-0">
+                                        <div class="col-6 p-0 mx-auto text-center">
+                                            <div class="content">
+                                                <div class="">Đơn vị chủ quản: Công ty cổ phần Bibomart TM</div>
+                                                <div class="">Địa chỉ: 120 Trần Duy Hưng, Phường Trung Hòa, Quận Cầu
+                                                    Giấy, Hà Nội, Việt Nam</div>
+                                                <div class="">Điện thoại: (024) 73091168 - Email: cskh@bibomart.com.vn
+                                                </div>
+                                                <div class="">Mã số thuế / Mã số doanh nghiệp: 0108024302, Ngày cấp:
+                                                    16/10/2017, Sở KHĐTHN</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row m-0">
+                                        <div class="col-6 p-0 mx-auto">
+                                            <div class="row m-0">
+                                                <div class="col-2 px-1 my-auto col__custorm--5 text-center img_footer">
+                                                    <img class="w-100 h-100 " src="./assets/image/footer.svg" alt="">
+                                                </div>
+                                                <div class="col-2 px-1 my-auto col__custorm--5 text-center img_footer">
+                                                    <img class="w-100 h-100 " src="./assets/image/footer_1.svg" alt="">
+                                                </div>
+                                                <div class="col-2 px-1 my-auto col__custorm--5 text-center img_footer">
+                                                    <img class="w-100 h-100 " src="./assets/image/footer_2.svg" alt="">
+                                                </div>
+                                                <div class="col-2 px-1 my-auto col__custorm--5 text-center img_footer">
+                                                    <img class="w-100 h-100 " src="./assets/image/footer_3.svg" alt="">
+                                                </div>
+                                                <div class="col-2 px-1 my-auto col__custorm--5 text-center img_footer">
+                                                    <img class="w-100 h-100 " src="./assets/image/footer_4.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="button__go--home position-fixed">
+        <div class="row m-0 row-gap-2">
+            <div class="col-12 p-0">
+                <div class="zalo bg-white overflow-hidden"><a href=""><img src="./assets/image/zalo.png" alt=""></a>
+                </div>
+            </div>
+            <div class="col-12 p-0">
+                <div class="bg-white text-center icon__gohome"><a href=""><i class="bi bi-chevron-up mx-auto"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</html>
