@@ -45,7 +45,7 @@ button input {
 }
 
 .fs-16 {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .fs-18 {
@@ -195,3 +195,4 @@ input[type='checkbox']:checked::after {
     font-weight: 600;
     color: black;
 }
+

@@ -458,22 +458,40 @@ img{
   color: #7a7a7a;
 }
 
+/*Add CSS Footer*/
+
+.custom-method-payment{
+  width: 40px;
+  height: 40px;
+}
+
+.custom-social{
+  width: 16px;
+  height: 16px;
+}
+/* Edit Footer */
+/* .footer {
+  background-color: #00000050;
+} */
 .footer__top {
-  border-bottom: 1px solid #00000010;
+  border-bottom: 1px solid #00000010; 
 }
 .maint__footer {
   max-width: 1520px;
 }
 .footer__top .content {
   font-size: 1rem;
+  /* color: #ffffff; */
   line-height: 24px;
 }
 .footer__middle .title {
   font-size: 1rem;
+  /* color: #ffffff; */
   line-height: 24px;
 }
 .footer__middle .content {
   font-size: 0.875rem;
+  /* color: #ffffff90; */
   line-height: 24px;
 }
 .icon--footer {
@@ -490,6 +508,7 @@ img{
 }
 .footer__bottom {
   font-size: 0.875rem;
+  /* color: #ffffff90; */
   line-height: 24px;
   border-top: 1px solid #00000010;
 }
