@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi tiết sản phẩm</title>
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/categories.css" />
+    <link rel="stylesheet" href="./assets/css/Lighttheme_1.css" />
+    <link rel="stylesheet" href="./assets/css/menu.css" />
+    <link rel="stylesheet" href="./assets/css/detail.css" />
+  </head>
+  <body>
+    <header class="header top-0 z-3">
+      <div class="header__top banner-top">
+        <img alt="aaaaa" title="aaaaa" class=""
+          src="https://media.bibomart.net/getfile/UploadFileTK/5-6-2024-18fe77f373d.jpg"
+          data-src="https://media.bibomart.net/getfile/UploadFileTK/5-6-2024-18fe77f373d.jpg"
+        />
+      </div>
+      <div class="header__top">
+        <div class="header__top--content m-auto">
+          <div class="row row--maint w-100 h-100 m-0">
+            <div class="col-6 p-0 my-auto">
+              <div class="d-flex flex-row">
+                <div class="my-auto">
+                  <a href="tel:+18006886"> <i class="bi bi-telephone me-1"></i>Hotline <span class="text--danger">1800 68 68</span> (miễn phí)</a>
+                </div>
+                <div class="thanh my-auto mx-2"></div>
+                <div class="my-auto">
+                  <a href="/he-thong-cua-hang.html"> <i class="bi bi-geo-alt"></i>Tìm siêu thị </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 p-0 my-auto">
+              <div class="float-end d-flex flex-row">
+                <div class="my-auto position-relative tooltip_QR">
+                  <a href="" >Tải ứng dụng
+                    <div class="row position-absolute">
+                      <div class="col-12 p-0">
+                        <img src="./assets/image/image_QR_download.svg" alt="" />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="thanh my-auto mx-2"></div>
+                <div class="my-auto"><a href="">Đăng nhập</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" top-0 header header__middle bg-white">
+        <div class="header__middle--content m-auto">
+          <div class="row row--maint m-0 w-100 h-auto">
+            <div class="col-2 p-0 my-auto">
+              <div class="w-100 h-100">
+                <a href="/"><img class="w-100 h-100" src="./assets/image/logo.webp" alt="" /></a>
+              </div>
+            </div>
+            <div class="col-7 p-0 my-auto">
+              <div class="">
+                <div class="row m-0 p-3">
+                  <div class="col-11 p-0"><input class="input--serch w-100 py-2 px-3" type="text" placeholder="Ba mẹ cần tìm gì cho bé hôm nay?" /></div>
+                  <div class="button--serch col-1 p-0">
+                    <div class="text-white h-100 d-flex justify-content-center align-items-center">
+                      <img alt="call" title="call" class="icon" src="./assets/image/icon_search_address.svg" data-src="/static/image/Buttonseach.svg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 p-0 my-auto">
+              <div class="d-flex justify-content-end">
+                <div class="my-auto text-center position-relative">
+                  <a href="/cart.html"><img class="icon mx-2" src="./assets/image/cart_head.svg" alt="" />Giỏ hàng</a>
+                  <div class="number--cart position-absolute bg-danger text-white d-flex justify-content-center align-items-center">0</div>
+                </div>
+                <div class="thanh ms-2 my-auto"></div>
+                <div class="my-auto text-center">
+                  <a href="/account/noti.html"><img class="icon mx-2" src="./assets/image/noti.svg" alt="" />Thông báo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="position-relative">
+        <!-- Popup Map -->
+        <div class="modal fade" id="exampleModalCenterMap" tabindex="1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header border-0"></div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="row custom__image--map p-3">
+                      <div class="col-12">
+                        <div class="row align-items-start pb-2 pe-2">
+                          <div class="col-6">
+                            <span class="title">Danh sách cửa hàng</span>
+                          </div>
+                          <div class="col-6 text-end p-0">
+                            <button type="button" class="close bg-transparent border-0" data-dismiss="modal" aria-label="Close">
+                              <i class="bi bi-x fs-3"></i>
+                            </button>
+                          </div>
+                          <div class="col-12">
+                            <span>Cho phép hệ thống truy cập địa chỉ từ thiết bị của bạn và đề xuất cửa hàng gần nhất</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="row">
+                              <div class="col-12 d-flex input_search--address">
+                                <form action="" class="w-100">
+                                  <input type="text" placeholder="Tìm cửa hàng" required="true" />
+                                  <button type="submit"><img src="./assets/image/icon_search_header.svg" alt="" /></button>
+                                </form>
+                              </div>
+                              <div class="col-12 mt-3 select__address">
+                                <div class="row">
+                                  <div class="col-6 pe-1">
+                                    <select name="tinhthanh">
+                                      <option selected value="">Tỉnh thành</option>
+                                      <option value="">Hà Nội</option>
+                                      <option value="">Hà Nội</option>
+                                      <option value="">Hà Nội</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-6 ps-1">
+                                    <select name="quanhuyen" id="">
+                                      <option selected value="">Quận huyện</option>
+                                      <option value="">Quận Nam Từ Niêm</option>
+                                      <option value="">Quận Nam Từ Niêm</option>
+                                      <option value="">Quận Nam Từ Niêm</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-12 mt-3 address_info">
+                                <div class="row">
+                                  <div class="col-12 border-bottom py-2">
+                                    <div class="row">
+                                      <div class="col-12 address_name">
+                                        <span>Bibo Mart Sơn Tây, Ba Vì, HN</span>
+                                      </div>
+                                      <div class="col-12 address">
+                                        <span><i class="bi bi-geo-alt"></i> Số 290 Bạch Mai, Q.Hai Bà Trưng, Hà Nội</span>
+                                      </div>
+                                      <div class="col-12 time_work">
+                                        <span><i class="bi bi-clock"></i> 07:00 - 22:00</span> <span><img src="./assets/image/call-calling.svg" alt="" />024 7309 1168 - Máy lẻ 10034</span>
+                                      </div>
+
+                                      <div class="col-12 d-flex address_detail justify-content-between align-items-center">
+                                        <a href="#">
+                                          <span> <img src="./assets/image/icon_chiduong.svg" alt="" /> Chỉ đường </span>
+                                        </a>
+                                        <a href="#">
+                                          <span> <img src="./assets/image/icon_cho_do_xe.svg" alt="" />Chỗ đỗ xe </span>
+                                        </a>
+                                        <a href="#" class="zalo">
+                                          <span> Nhóm <strong>Zalo</strong> </span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-12 border-bottom py-2">
+                                    <div class="row">
+                                      <div class="col-12 address_name">
+                                        <span>Bibo Mart Sơn Tây, Ba Vì, HN</span>
+                                      </div>
+                                      <div class="col-12 address">
+                                        <span><i class="bi bi-geo-alt"></i> Số 290 Bạch Mai, Q.Hai Bà Trưng, Hà Nội</span>
+                                      </div>
+                                      <div class="col-12 time_work">
+                                        <span><i class="bi bi-clock"></i> 07:00 - 22:00</span> <span><img src="./assets/image/call-calling.svg" alt="" />024 7309 1168 - Máy lẻ 10034</span>
+                                      </div>
+
+                                      <div class="col-12 d-flex address_detail justify-content-between align-items-center">
+                                        <a href="#">
+                                          <span> <img src="./assets/image/icon_chiduong.svg" alt="" /> Chỉ đường </span>
+                                        </a>
+                                        <a href="#">
+                                          <span> <img src="./assets/image/icon_cho_do_xe.svg" alt="" />Chỗ đỗ xe </span>
+                                        </a>
+                                        <a href="#" class="zalo">
+                                          <span> Nhóm <strong>Zalo</strong> </span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-12 border-bottom py-2">
+                                    <div class="row">
+                                      <div class="col-12 address_name">
+                                        <span>Bibo Mart Sơn Tây, Ba Vì, HN</span>
+                                      </div>
+                                      <div class="col-12 address">
+                                        <span><i class="bi bi-geo-alt"></i> Số 290 Bạch Mai, Q.Hai Bà Trưng, Hà Nội</span>
+                                      </div>
+                                      <div class="col-12 time_work">
+                                        <span><i class="bi bi-clock"></i> 07:00 - 22:00</span> <span><img src="./assets/image/call-calling.svg" alt="" />024 7309 1168 - Máy lẻ 10034</span>
+                                      </div>
+
+                                      <div class="col-12 d-flex address_detail justify-content-between align-items-center">
+                                        <a href="#">
+                                          <span> <img src="./assets/image/icon_chiduong.svg" alt="" /> Chỉ đường </span>
+                                        </a>
+                                        <a href="#">
+                                          <span> <img src="./assets/image/icon_cho_do_xe.svg" alt="" />Chỗ đỗ xe </span>
+                                        </a>
+                                        <a href="#" class="zalo">
+                                          <span> Nhóm <strong>Zalo</strong> </span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-12 border-bottom py-2">
+                                    <div class="row">
+                                      <div class="col-12 address_name">
+                                        <span>Bibo Mart Sơn Tây, Ba Vì, HN</span>
+                                      </div>
+                                      <div class="col-12 address">
+                                        <span><i class="bi bi-geo-alt"></i> Số 290 Bạch Mai, Q.Hai Bà Trưng, Hà Nội</span>
+                                      </div>
+                                      <div class="col-12 time_work">
+                                        <span><i class="bi bi-clock"></i> 07:00 - 22:00</span> <span><img src="./assets/image/call-calling.svg" alt="" />024 7309 1168 - Máy lẻ 10034</span>
+                                      </div>
+
+                                      <div class="col-12 d-flex address_detail justify-content-between align-items-center">
+                                        <a href="#">
+                                          <span> <img src="./assets/image/icon_chiduong.svg" alt="" /> Chỉ đường </span>
+                                        </a>
+                                        <a href="#">
+                                          <span> <img src="./assets/image/icon_cho_do_xe.svg" alt="" />Chỗ đỗ xe </span>
+                                        </a>
+                                        <a href="#" class="zalo">
+                                          <span> Nhóm <strong>Zalo</strong> </span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-6 p-0">
+                            <img class="w-100 position-relative" src="./assets/image/image_map.svg" alt="" />
+                            <div class="row position-absolute bottom-0 w-50 z-2 address_info p-4" >
+                              <div class="col-12 bg-white p-3">
+                                <div class="row">
+                                  <div class="col-12 address_name">
+                                    <span>Bibo Mart Sơn Tây, Ba Vì, HN</span>
+                                  </div>
+                                  <div class="col-12 address">
+                                    <span><i class="bi bi-geo-alt"></i> Số 290 Bạch Mai, Q.Hai Bà Trưng, Hà Nội</span>
+                                  </div>
+                                  <div class="col-12 time_work">
+                                    <span><i class="bi bi-clock"></i> 07:00 - 22:00</span> <span><img src="./assets/image/call-calling.svg" alt="" />024 7309 1168 - Máy lẻ 10034</span>
+                                  </div>
+
+                                  <div class="col-12 d-flex address_detail justify-content-between align-items-center">
+                                    <a href="#">
+                                      <span> <img src="./assets/image/icon_chiduong.svg" alt="" /> Chỉ đường </span>
+                                    </a>
+                                    <a href="#">
+                                      <span> <img src="./assets/image/icon_cho_do_xe.svg" alt="" />Chỗ đỗ xe </span>
+                                    </a>
+                                    <a href="#" class="zalo">
+                                      <span> Nhóm <strong>Zalo</strong> </span>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End PopupMap -->
+
+        <!-- Popup Size -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header border-0 d-flex justify-content-between py-0">
+                <h5 class="modal-title" id="exampleModalLongTitle">Hướng dẫn chọn Size</h5>
+                <button type="button" class="close bg-transparent border-0" data-dismiss="modal" aria-label="Close">
+                  <span class="fs-3" aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-12 py-0 ">
+                    <img class="w-100" src="./assets/image/image_size.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Popup Size -->
+
+        <!-- Notify -->
+        <div class="row align-items-center position-absolute notify">
+          <div class="col-1">
+            <img src="./assets/image/icon_notify.gif" alt="" />
+          </div>
+          <div class="col-10 title ps-4">
+            <span>Đang có 300 Hotdeal giá siêu hời</span> <br />
+            <span>Săn ngay kẻo lỡ Ba Mẹ ơi!</span>
+          </div>
+          <div class="col-1">
+            <button><i class="bi bi-chevron-right"></i></button>
+          </div>
+        </div>
+        <!-- Content -->
+        <div class="container mx-auto pb-3">
+          <!-- Bread crump -->
+          <div class="row row--maint">
+            <div class="col-12 p-0 mb-2 mt-3 bread-crumb">
+              <ul class="d-flex">
+                <li>
+                  <a href="/">
+                    <span class="me-2"> Trang chủ <i class="bi bi-chevron-right ms-2 fs-6"></i> </span>
+                  </a>
+                </li>
+                <li class="parent position-relative text-wrap">
+                  <a href="">
+                    <span> Ăn dặm, dinh dưỡng<i class="bi bi-chevron-right ms-1 me-1 fs-6"></i> </span>
+                  </a>
+                  <ul class="position-absolute px-0 z-10 pt-1 bg-white d-none">
+                    <li class="ps-2 mx-1 text-truncate">
+                      <a href=""><span>Sữa cho bé</span></a>
+                    </li>
+                    <li class="ps-2 mx-1 text-truncate">
+                      <a href=""><span>Bỉm tã &amp; vệ sinh</span></a>
+                    </li>
+                    <li class="ps-2 mx-1 text-truncate">
+                      <a href=""><span>Bình sữa &amp; phụ kiện</span></a>
+                    </li>
+                    <li class="ps-2 mx-1 text-truncate">
+                      <a href=""><span>Vitamin &amp; sức khỏe</span></a>
+                    </li>
+                    <li class="ps-2 mx-1 text-truncate">
+                      <a href=""><span>Đồ dùng mẹ &amp; bé</span></a>
+                    </li>
+                    <li class="ps-2 mx-1 text-truncate">
+                      <a href=""><span>Đồ sơ sinh</span></a>
+                    </li>
+                    <li class="ps-2 mx-1 text-truncate">
+                      <a href=""><span>Thời trang &amp; phụ kiện</span></a>
+                    </li>
+                    <li class="ps-2 mx-1 text-truncate">
+                      <a href=""><span>Xe cho bé</span></a>
+                    </li>
+                    <li class="ps-2 mx-1 text-truncate">
+                      <a href=""><span>Đồ chơi, học tập</span></a>
+                    </li>
+                    <li class="ps-2 mx-1 text-truncate">
+                      <a href=""><span>Mẹ bầu &amp; sau sinh</span></a>
+                    </li>
+                    <li class="ps-2 mx-1 text-truncate">
+                      <a href=""><span>Chăm sóc gia đình</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="parent position-relative text-wrap">
+                  <a href="">
+                    <span> Bánh ăn dặm<i class="bi bi-chevron-right ms-1 me-1 fs-6"></i> </span>
+                  </a>
+                  <ul class="position-absolute px-0 z-10 pt-1 bg-white d-none">
+                    <li class="ps-2 mx-1 text-truncate">
+                      <a href="#"><span>Bột ăn dặm</span></a>
+                    </li>
+                    <li class="ps-2 mx-1 text-truncate">
+                      <a href="#"><span>Mì ăn dặm</span></a>
+                    </li>
+                    <li class="ps-2 mx-1 text-truncate">
+                      <a href="#"><span>Cháo ăn dặm</span></a>
+                    </li>
+                    <li class="ps-2 mx-1 text-truncate">
+                      <a href="#"><span>Váng sữa</span></a>
+                    </li>
+                    <li class="ps-2 mx-1 text-truncate">
+                      <a href="#"><span>Phô mai</span></a>
+                    </li>
+                    <li class="ps-2 mx-1 text-truncate">
+                      <a href="#"><span>Sữa chua</span></a>
+                    </li>
+                    <li class="ps-2 mx-1 text-truncate">
+                      <a href="#"><span>Dinh dưỡng đóng lọ</span></a>
+                    </li>
+                    <li class="ps-2 mx-1 text-truncate">
+                      <a href="#"><span>Bánh, kẹo dinh dưỡng</span></a>
+                    </li>
+                    <li class="ps-2 mx-1 text-truncate">
+                      <a href="#"><span>Gia vị ăn dặm</span></a>
+                    </li>
+                    <li class="ps-2 mx-1 text-truncate">
+                      <a href="#"><span>Nước yến cho bé</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="parent position-relative text-wrap">
+                  <span><strong>Bánh ăn dặm Gerber</strong></span>
+                  <ul class="position-absolute px-0 z-10 pt-1 bg-white d-none">
+                    <li class="ps-2 mx-1 text-truncate">
+                      <a href="#"><span>Bánh ăn dặm Pigeon</span></a>
+                    </li>
+                    <li class="ps-2 mx-1 text-truncate">
+                      <a href="#"><span>Bánh ăn dặm Maeil Dairies</span></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row mt-3 row--maint" id="info_product">
+            <!-- Image Product -->
+            <div class="col-6 image_product overflow-y-hidden">
+              <div class="row">
+                <!-- Galery Product -->
+                <div class="col-2 galery">
+                  <div class="row">
+                    <div class="col-12 p-0 active">
+                      <img class="w-100" src="./assets/image/galery_1.svg" alt="" />
+                    </div>
+                    <div class="col-12 p-0">
+                      <img class="w-100" src="./assets/image/galery_2.svg" alt="" />
+                    </div>
+                    <div class="col-12 p-0">
+                      <img class="w-100" src="./assets/image/galery_3.svg" alt="" />
+                    </div>
+                    <div class="col-12 p-0">
+                      <img class="w-100" src="./assets/image/galery_4.svg" alt="" />
+                    </div>
+                    <div class="col-12 p-0">
+                      <img class="w-100" src="./assets/image/galery_5.svg" alt="" />
+                    </div>
+                    <div class="col-12 p-0">
+                      <img class="w-100" src="./assets/image/galery_4.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <!-- End Galery -->
+                <div class="col-10 p-0 position-relative">
+                  <div class="position-absolute hotdeal_detail">
+                    <span>Hot Deal</span>
+                  </div>
+                  <img class="w-100" src="./assets/image/anhsp_detail.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- End Image Product -->
+
+            <!-- Infomation Product -->
+            <div class="col-6 products_infomation">
+              <div class="row">
+                <div class="col-12 px-0 name mb-2">
+                  <span> Bộ dài tay cho mẹ sau sinh Bibo's cừu hồng </span>
+                </div>
+
+                <div class="col-12 px-0 info mb-3">
+                  <span>Thương hiệu: <strong>Bibo's</strong></span>
+                  <span>MSP: <strong>135622C</strong></span>
+                </div>
+
+                <div class="col-12 px-0 price pb-4">
+                  <div class="row align-items-center">
+                    <div class="col-6">
+                      <span class="new">339.000 đ</span> <span class="old"><del>299.000đ</del></span> <span class="sale">-15%</span>
+                    </div>
+                    <div class="col-6 bixu text-end">
+                      <span> +5.000 BiXu <img src="./assets/image/logo_bixu.svg" alt="" /> </span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Color -->
+                <div class="col-12 px-0 properties">
+                  <span>Màu sắc</span>
+                  <div class="row p-0">
+                    <div class="col-2 p-0">
+                      <img class="w-100" src="./assets/image/products_color.svg" alt="" />
+                    </div>
+                    <div class="col-2 p-0">
+                      <img class="w-100" src="./assets/image/products_color.svg" alt="" />
+                    </div>
+                    <div class="col-2 p-0">
+                      <img class="w-100" src="./assets/image/products_color.svg" alt="" />
+                    </div>
+                    <div class="col-2 p-0">
+                      <img class="w-100" src="./assets/image/products_color.svg" alt="" />
+                    </div>
+                    <div class="col-2 p-0 active">
+                      <img class="w-100" src="./assets/image/products_color.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <!-- End color -->
+
+                <!-- Size -->
+                <div class="col-12 p-0 properties size">
+                  <span>Kích thước</span>
+                  <a href="#" class="ms-3" data-toggle="modal" data-target="#exampleModalCenter">
+                    <img src="./assets/image/thuoc_ke.svg" alt="" />
+                    <span class="text-decoration-underline"> (Hướng dẫn chọn size) </span>
+                  </a>
+                  <div class="row">
+                    <div class="col-2">
+                      <span>6M</span>
+                    </div>
+                    <div class="col-2">
+                      <span>9M</span>
+                    </div>
+                    <div class="col-2">
+                      <span>1Y</span>
+                    </div>
+                    <div class="col-2">
+                      <span>18M</span>
+                    </div>
+                    <div class="col-2 active">
+                      <span>2Y</span>
+                    </div>
+                    <div class="col-2">
+                      <span>3Y</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Size -->
+
+                <div class="col-12 gift_info">
+                  <ul>
+                    <li>Quà tặng trị giá 30.000đ khi mua đơn hàng Kendamil trị giá > 600.000đ</li>
+                  </ul>
+                </div>
+
+                <!-- Quantity -->
+                <div class="col-12 quatity my-3">
+                  <div class="row align-items-center">
+                    <div class="col-2 p-0"><span>Số lượng</span></div>
+                    <div class="col-6 p-0 change_quatity d-flex justify-content-start fs-5">
+                      <button><i class="bi bi-dash"></i></button>
+                      <button class="value_quatity">2</button>
+                      <button><i class="bi bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 related-sale">
+                  <div class="row">
+                    <div class="col-6 text-start p-0">
+                      <span>Có 4 sản phầm cùng khuyến mại</span>
+                    </div>
+                    <div class="col-6 text-end p-0">
+                      <a href="#">
+                        <span>Xem tất cả <i class="bi bi-chevron-right"></i></span>
+                      </a>
+                    </div>
+
+                    <div class="col-12 mt-2 related_list">
+                      <div class="row row-gap-4">
+                        <div class="col-6">
+                          <div class="row active">
+                            <div class="col-3 p-0">
+                              <img src="./assets/image/related_1.svg" alt="" />
+                            </div>
+                            <div class="col-9">
+                              <div class="row px-3 py-2">
+                                <div class="col-12">
+                                  <span>Bỉm - tã quần Merries cộng miếng size XL 3...</span>
+                                </div>
+                                <div class="col-12 change_quatity">
+                                  <button><i class="bi bi-dash"></i></button>
+                                  <button class="value_quatity">1</button>
+                                  <button><i class="bi bi-plus"></i></button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="row">
+                            <div class="col-3 p-0">
+                              <img src="./assets/image/related_2.svg" alt="" />
+                            </div>
+                            <div class="col-9">
+                              <div class="row px-3 py-2">
+                                <div class="col-12">
+                                  <span>Bỉm - tã quần Merries cộng miếng size XL 3...</span>
+                                </div>
+                                <div class="col-12 change_quatity">
+                                  <button><i class="bi bi-dash"></i></button>
+                                  <button class="value_quatity">1</button>
+                                  <button><i class="bi bi-plus"></i></button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="row">
+                            <div class="col-3 p-0">
+                              <img src="./assets/image/related_3.svg" alt="" />
+                            </div>
+                            <div class="col-9">
+                              <div class="row px-3 py-2">
+                                <div class="col-12">
+                                  <span>Bỉm - tã quần Merries cộng miếng size XL 3...</span>
+                                </div>
+                                <div class="col-12 change_quatity">
+                                  <button><i class="bi bi-dash"></i></button>
+                                  <button class="value_quatity">1</button>
+                                  <button><i class="bi bi-plus"></i></button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="row">
+                            <div class="col-3 p-0">
+                              <img src="./assets/image/related_4.svg" alt="" />
+                            </div>
+                            <div class="col-9">
+                              <div class="row px-3 py-2">
+                                <div class="col-12">
+                                  <span>Bỉm - tã quần Merries cộng miếng size XL 3...</span>
+                                </div>
+                                <div class="col-12 change_quatity">
+                                  <button><i class="bi bi-dash"></i></button>
+                                  <button class="value_quatity">1</button>
+                                  <button><i class="bi bi-plus"></i></button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 gift">
+                  <div class="row align-items-center">
+                    <div class="col-6 text-start p-0">
+                      <span><img class="icon_gift" src="./assets/image/icon_gift.svg" alt="" /> Quà tặng</span>
+                    </div>
+                    <div class="col-6 text-end p-0">
+                      <a href="#">
+                        <span>Xem tất cả <i class="bi bi-chevron-right"></i></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row position-relative gift_list">
+                    <button class="btn_next position-absolute"><i class="bi bi-chevron-left"></i></button>
+                    <button class="btn_pre position-absolute"><i class="bi bi-chevron-right"></i></button>
+                    <div class="col-3">
+                      <div class="row">
+                        <div class="col-12">
+                          <img src="./assets/image/image_quatang.svg" alt="" />
+                        </div>
+
+                        <div class="col-12 change_quatity">
+                          <button><i class="bi bi-dash"></i></button>
+                          <button class="value_quatity">1</button>
+                          <button><i class="bi bi-plus"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="row">
+                        <div class="col-12">
+                          <img src="./assets/image/image_quatang.svg" alt="" />
+                        </div>
+
+                        <div class="col-12 change_quatity">
+                          <button><i class="bi bi-dash"></i></button>
+                          <button class="value_quatity">1</button>
+                          <button><i class="bi bi-plus"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="row">
+                        <div class="col-12">
+                          <img src="./assets/image/image_quatang.svg" alt="" />
+                        </div>
+
+                        <div class="col-12 change_quatity">
+                          <button><i class="bi bi-dash"></i></button>
+                          <button class="value_quatity">1</button>
+                          <button><i class="bi bi-plus"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="row">
+                        <div class="col-12">
+                          <img src="./assets/image/image_quatang.svg" alt="" />
+                        </div>
+
+                        <div class="col-12 change_quatity">
+                          <button><i class="bi bi-dash"></i></button>
+                          <button class="value_quatity">1</button>
+                          <button><i class="bi bi-plus"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 mt-5">
+                  <div class="row">
+                    <div class="col-12 custom-parent">
+                      <i class="bi bi-geo-alt fs-5"></i>
+                      <a href="#" data-toggle="modal" data-target="#exampleModalCenterMap">
+                        <span class="link_cuahang">5 cửa hàng</span>
+
+                        <span>gần bạn đang có sản phẩm này</span>
+                      </a>
+                    </div>
+
+                    <div class="col-12 mt-3">
+                      <div class="row action">
+                        <div class="col-10 add-to-cart">
+                          <button>
+                            <img src="./assets/image/icon_cart.svg" alt="" />
+                            Thêm vào giỏ
+                          </button>
+                        </div>
+
+                        <div class="col-2 like text-start p-0">
+                          <div class="row">
+                            <div class="col-6">
+                              <button class="btn_like" onmouseover="this.querySelector('img').src = `./assets/image/icon_heart_btn.svg`" onmouseout="this.querySelector('img').src = `./assets/image/heart.svg`"><img src="./assets/image/heart.svg" alt="" /></button>
+                            </div>
+                            <div class="col-6">
+                              <button class="btn_share" onmouseover="this.querySelector('img').src = `./assets/image/icon_btn_share--white.svg`" onmouseout="this.querySelector('img').src = `./assets/image/icon_btn_share.svg`"><img src="./assets/image/icon_btn_share.svg" alt="" /></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="row product_fixed row--maint">
+          <div class="col-6 p-0">
+            <div class="row">
+              <div class="col-12">
+                <span class="name">Bộ dài tay cho mẹ sau sinh Bibo's cừu hồng</span>
+              </div>
+              <div class="col-12 price">
+                <span class="new">339.000 đ</span> <span class="old"><del>299.000đ</del></span> <span class="sale">-15%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 p-0 add-to-cart d-flex justify-content-end align-items-center">
+            <button>
+              <img src="./assets/image/icon_cart.svg" alt="" />
+              Thêm vào giỏ
+            </button>
+          </div>
+        </div> -->
+        </div>
+
+        <div class="related-product py-3">
+          <div class="container row m-auto row--maint">
+            <div class="col-12">
+              <div class="row title">
+                <div class="col-6 p-0 text-start"><span class="">Thường được mua cùng</span></div>
+              </div>
+
+              <div class="row position-relative related-product_list">
+                <div class="col-12">
+                  <div class="mant__item my-auto">
+                    <div class="row m-0 mx-2 position-relative">
+                      <a href="">
+                        <div class="button__left--content position-absolute w-auto p-2 px-3 z-1">
+                          <span class="w-100">
+                            <i class="bi bi-chevron-left"></i>
+                          </span>
+                        </div>
+                      </a>
+                      <a href="">
+                        <div class="button__right--content position-absolute w-auto p-2 px-3 z-1">
+                          <span class="w-100">
+                            <i class="bi bi-chevron-right"></i>
+                          </span>
+                        </div>
+                      </a>
+                      <div class="col-2 col__custorm--5 px-2">
+                        <div class="mant__content h-100 bg-white py-2">
+                          <div class="mant__content--show position-relative overflow-hidden">
+                            <div class="sale position-absolute px-1 z-1 mx-1">-15%</div>
+                            <a href="">
+                              <div class="position-relative w-100 h-100">
+                                <div class="img_thumbnail">
+                                  <img src="./assets/image/anhsp.png" alt="" />
+                                </div>
+                                <div class="img_thumbnail position-absolute w-100 h-100 top-0">
+                                  <img src="./assets/image/anhsp.png" alt="" />
+                                </div>
+                              </div>
+                            </a>
+                            <div class="like position-absolute">
+                              <img class="icon" src="./assets/image/heart.svg" alt="" onmouseover="this.src='./assets/image/heart_red.svg'" onmouseout="this.src='./assets/image/heart.svg'" />
+                            </div>
+                            <div class="bixu position-absolute px-1 mx-1 d-none">Tặng 2.000 xu</div>
+                          </div>
+                          <div class="mant__content--info px-2">
+                            <a href="">
+                              <div class="name">Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...</div>
+                            </a>
+                            <div class="row m-0">
+                              <div class="col-10 p-0">
+                                <div class="row m-0">
+                                  <div class="col-6 p-0 my-auto">
+                                    <div class="price fw-semibold">299.000<span class="text-decoration-underline fw-semibold">đ</span></div>
+                                  </div>
+                                  <div class="col-6 p-0 my-auto">
+                                    <div class="price--sale text-center text-decoration-line-through d-none">299.000<span class="text-decoration-underline">đ</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-2 p-0">
+                                <div class="cart position-relative float-end">
+                                  <div class="img_cart"><img class="icon" src="./assets/image/cart.svg" alt="" /></div>
+                                  <div class="img_cart position-absolute top-0 start-0"><img class="icon" src="./assets/image/cart_red.svg" alt="" /></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-2 col__custorm--5 px-2">
+                        <div class="mant__content h-100 bg-white py-2">
+                          <div class="mant__content--show position-relative overflow-hidden">
+                            <div class="sale position-absolute px-1 z-1 mx-1">-15%</div>
+                            <a href="">
+                              <div class="position-relative w-100 h-100">
+                                <div class="img_thumbnail w-100 h-100">
+                                  <img src="./assets/image/anhsp.png" alt="" />
+                                </div>
+                                <div class="img_thumbnail position-absolute w-100 h-100 top-0">
+                                  <img src="./assets/image/anhsp.png" alt="" />
+                                </div>
+                              </div>
+                            </a>
+                            <div class="like position-absolute">
+                              <img class="icon" src="./assets/image/heart.svg" alt="" onmouseover="this.src='./assets/image/heart_red.svg'" onmouseout="this.src='./assets/image/heart.svg'" />
+                            </div>
+                            <div class="bixu position-absolute px-1 mx-1 d-none">Tặng 2.000 xu</div>
+                          </div>
+                          <div class="mant__content--info px-2">
+                            <a href="">
+                              <div class="name">Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...</div>
+                            </a>
+                            <div class="row m-0">
+                              <div class="col-10 p-0">
+                                <div class="row m-0">
+                                  <div class="col-6 p-0 my-auto">
+                                    <div class="price fw-semibold">299.000<span class="text-decoration-underline fw-semibold">đ</span></div>
+                                  </div>
+                                  <div class="col-6 p-0 my-auto">
+                                    <div class="price--sale text-center text-decoration-line-through d-none">299.000<span class="text-decoration-underline">đ</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-2 p-0">
+                                <div class="cart position-relative float-end">
+                                  <div class="img_cart"><img class="icon" src="./assets/image/cart.svg" alt="" /></div>
+                                  <div class="img_cart position-absolute top-0 start-0"><img class="icon" src="./assets/image/cart_red.svg" alt="" /></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-2 col__custorm--5 px-2">
+                        <div class="mant__content h-100 bg-white py-2">
+                          <div class="mant__content--show position-relative overflow-hidden">
+                            <div class="sale position-absolute px-1 z-1 mx-1">-15%</div>
+                            <a href="">
+                              <div class="position-relative w-100 h-100">
+                                <div class="img_thumbnail w-100 h-100">
+                                  <img src="./assets/image/anhsp.png" alt="" />
+                                </div>
+                                <div class="img_thumbnail position-absolute w-100 h-100 top-0">
+                                  <img src="./assets/image/anhsp.png" alt="" />
+                                </div>
+                              </div>
+                            </a>
+                            <div class="like position-absolute">
+                              <img class="icon" src="./assets/image/heart.svg" alt="" onmouseover="this.src='./assets/image/heart_red.svg'" onmouseout="this.src='./assets/image/heart.svg'" />
+                            </div>
+                            <div class="bixu position-absolute px-1 mx-1 d-none">Tặng 2.000 xu</div>
+                          </div>
+                          <div class="mant__content--info px-2">
+                            <a href="">
+                              <div class="name">Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...</div>
+                            </a>
+                            <div class="row m-0">
+                              <div class="col-10 p-0">
+                                <div class="row m-0">
+                                  <div class="col-6 p-0 my-auto">
+                                    <div class="price fw-semibold">299.000<span class="text-decoration-underline fw-semibold">đ</span></div>
+                                  </div>
+                                  <div class="col-6 p-0 my-auto">
+                                    <div class="price--sale text-center text-decoration-line-through d-none">299.000<span class="text-decoration-underline">đ</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-2 p-0">
+                                <div class="cart position-relative float-end">
+                                  <div class="img_cart"><img class="icon" src="./assets/image/cart.svg" alt="" /></div>
+                                  <div class="img_cart position-absolute top-0 start-0"><img class="icon" src="./assets/image/cart_red.svg" alt="" /></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-2 col__custorm--5 px-2">
+                        <div class="mant__content h-100 bg-white py-2">
+                          <div class="mant__content--show position-relative overflow-hidden">
+                            <div class="sale position-absolute px-1 z-1 mx-1">-15%</div>
+                            <a href="">
+                              <div class="position-relative w-100 h-100">
+                                <div class="img_thumbnail w-100 h-100">
+                                  <img src="./assets/image/anhsp.png" alt="" />
+                                </div>
+                                <div class="img_thumbnail position-absolute w-100 h-100 top-0">
+                                  <img src="./assets/image/anhsp.png" alt="" />
+                                </div>
+                              </div>
+                            </a>
+                            <div class="like position-absolute">
+                              <img class="icon" src="./assets/image/heart.svg" alt="" onmouseover="this.src='./assets/image/heart_red.svg'" onmouseout="this.src='./assets/image/heart.svg'" />
+                            </div>
+                            <div class="bixu position-absolute px-1 mx-1 d-none">Tặng 2.000 xu</div>
+                          </div>
+                          <div class="mant__content--info px-2">
+                            <a href="">
+                              <div class="name">Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...</div>
+                            </a>
+                            <div class="row m-0">
+                              <div class="col-10 p-0">
+                                <div class="row m-0">
+                                  <div class="col-6 p-0 my-auto">
+                                    <div class="price fw-semibold">299.000<span class="text-decoration-underline fw-semibold">đ</span></div>
+                                  </div>
+                                  <div class="col-6 p-0 my-auto">
+                                    <div class="price--sale text-center text-decoration-line-through d-none">299.000<span class="text-decoration-underline">đ</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-2 p-0">
+                                <div class="cart position-relative float-end">
+                                  <div class="img_cart"><img class="icon" src="./assets/image/cart.svg" alt="" /></div>
+                                  <div class="img_cart position-absolute top-0 start-0"><img class="icon" src="./assets/image/cart_red.svg" alt="" /></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-2 col__custorm--5 px-2">
+                        <div class="mant__content h-100 bg-white py-2">
+                          <div class="mant__content--show position-relative overflow-hidden">
+                            <div class="sale position-absolute px-1 z-1 mx-1">-15%</div>
+                            <a href="">
+                              <div class="position-relative w-100 h-100">
+                                <div class="img_thumbnail w-100 h-100">
+                                  <img src="./assets/image/anhsp.png" alt="" />
+                                </div>
+                                <div class="img_thumbnail position-absolute w-100 h-100 top-0">
+                                  <img src="./assets/image/anhsp.png" alt="" />
+                                </div>
+                              </div>
+                            </a>
+                            <div class="like position-absolute">
+                              <img class="icon" src="./assets/image/heart.svg" alt="" onmouseover="this.src='./assets/image/heart_red.svg'" onmouseout="this.src='./assets/image/heart.svg'" />
+                            </div>
+                            <div class="bixu position-absolute px-1 mx-1 d-none">Tặng 2.000 xu</div>
+                          </div>
+                          <div class="mant__content--info px-2">
+                            <a href="">
+                              <div class="name">Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...</div>
+                            </a>
+                            <div class="row m-0">
+                              <div class="col-10 p-0">
+                                <div class="row m-0">
+                                  <div class="col-6 p-0 my-auto">
+                                    <div class="price fw-semibold">299.000<span class="text-decoration-underline fw-semibold">đ</span></div>
+                                  </div>
+                                  <div class="col-6 p-0 my-auto">
+                                    <div class="price--sale text-center text-decoration-line-through">299.000<span class="text-decoration-underline">đ</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-2 p-0">
+                                <div class="cart position-relative float-end">
+                                  <div class="img_cart"><img class="icon" src="./assets/image/cart.svg" alt="" /></div>
+                                  <div class="img_cart position-absolute top-0 start-0"><img class="icon" src="./assets/image/cart_red.svg" alt="" /></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 mt-3">
+              <div class="row pt-4 title">
+                <div class="col-6 p-0 text-start"><span class="">Sản phẩm tương tự</span></div>
+              </div>
+
+              <div class="row position-relative related-product_list">
+                <div class="col-12">
+                  <div class="mant__item my-auto">
+                    <div class="row m-0 mx-2 position-relative">
+                      <a href="">
+                        <div class="button__left--content position-absolute w-auto p-2 px-3 z-1">
+                          <span class="w-100">
+                            <i class="bi bi-chevron-left"></i>
+                          </span>
+                        </div>
+                      </a>
+                      <a href="">
+                        <div class="button__right--content position-absolute w-auto p-2 px-3 z-1">
+                          <span class="w-100">
+                            <i class="bi bi-chevron-right"></i>
+                          </span>
+                        </div>
+                      </a>
+
+                      <div class="col-2 col__custorm--5 px-2">
+                        <div class="mant__content h-100 bg-white py-2">
+                          <div class="mant__content--show position-relative overflow-hidden">
+                            <div class="sale position-absolute px-1 z-1 mx-1">-15%</div>
+                            <a href="">
+                              <div class="position-relative w-100 h-100">
+                                <div class="img_thumbnail">
+                                  <img src="./assets/image/anhsp.png" alt="" />
+                                </div>
+                                <div class="img_thumbnail position-absolute w-100 h-100 top-0">
+                                  <img src="./assets/image/anhsp.png" alt="" />
+                                </div>
+                              </div>
+                            </a>
+                            <div class="like position-absolute">
+                              <img class="icon" src="./assets/image/heart.svg" alt="" onmouseover="this.src='./assets/image/heart_red.svg'" onmouseout="this.src='./assets/image/heart.svg'" />
+                            </div>
+                            <div class="bixu position-absolute px-1 mx-1 d-none">Tặng 2.000 xu</div>
+                          </div>
+                          <div class="mant__content--info px-2">
+                            <a href="">
+                              <div class="name">Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...</div>
+                            </a>
+                            <div class="row m-0">
+                              <div class="col-10 p-0">
+                                <div class="row m-0">
+                                  <div class="col-6 p-0 my-auto">
+                                    <div class="price fw-semibold">299.000<span class="text-decoration-underline fw-semibold">đ</span></div>
+                                  </div>
+                                  <div class="col-6 p-0 my-auto">
+                                    <div class="price--sale text-center text-decoration-line-through d-none">299.000<span class="text-decoration-underline">đ</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-2 p-0">
+                                <div class="cart position-relative float-end">
+                                  <div class="img_cart"><img class="icon" src="./assets/image/cart.svg" alt="" /></div>
+                                  <div class="img_cart position-absolute top-0 start-0"><img class="icon" src="./assets/image/cart_red.svg" alt="" /></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-2 col__custorm--5 px-2">
+                        <div class="mant__content h-100 bg-white py-2">
+                          <div class="mant__content--show position-relative overflow-hidden">
+                            <div class="sale position-absolute px-1 z-1 mx-1">-15%</div>
+                            <a href="">
+                              <div class="position-relative w-100 h-100">
+                                <div class="img_thumbnail w-100 h-100">
+                                  <img src="./assets/image/anhsp.png" alt="" />
+                                </div>
+                                <div class="img_thumbnail position-absolute w-100 h-100 top-0">
+                                  <img src="./assets/image/anhsp.png" alt="" />
+                                </div>
+                              </div>
+                            </a>
+                            <div class="like position-absolute">
+                              <img class="icon" src="./assets/image/heart.svg" alt="" onmouseover="this.src='./assets/image/heart_red.svg'" onmouseout="this.src='./assets/image/heart.svg'" />
+                            </div>
+                            <div class="bixu position-absolute px-1 mx-1 d-none">Tặng 2.000 xu</div>
+                          </div>
+                          <div class="mant__content--info px-2">
+                            <a href="">
+                              <div class="name">Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...</div>
+                            </a>
+                            <div class="row m-0">
+                              <div class="col-10 p-0">
+                                <div class="row m-0">
+                                  <div class="col-6 p-0 my-auto">
+                                    <div class="price fw-semibold">299.000<span class="text-decoration-underline fw-semibold">đ</span></div>
+                                  </div>
+                                  <div class="col-6 p-0 my-auto">
+                                    <div class="price--sale text-center text-decoration-line-through d-none">299.000<span class="text-decoration-underline">đ</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-2 p-0">
+                                <div class="cart position-relative float-end">
+                                  <div class="img_cart"><img class="icon" src="./assets/image/cart.svg" alt="" /></div>
+                                  <div class="img_cart position-absolute top-0 start-0"><img class="icon" src="./assets/image/cart_red.svg" alt="" /></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-2 col__custorm--5 px-2">
+                        <div class="mant__content h-100 bg-white py-2">
+                          <div class="mant__content--show position-relative overflow-hidden">
+                            <div class="sale position-absolute px-1 z-1 mx-1">-15%</div>
+                            <a href="">
+                              <div class="position-relative w-100 h-100">
+                                <div class="img_thumbnail w-100 h-100">
+                                  <img src="./assets/image/anhsp.png" alt="" />
+                                </div>
+                                <div class="img_thumbnail position-absolute w-100 h-100 top-0">
+                                  <img src="./assets/image/anhsp.png" alt="" />
+                                </div>
+                              </div>
+                            </a>
+                            <div class="like position-absolute">
+                              <img class="icon" src="./assets/image/heart.svg" alt="" onmouseover="this.src='./assets/image/heart_red.svg'" onmouseout="this.src='./assets/image/heart.svg'" />
+                            </div>
+                            <div class="bixu position-absolute px-1 mx-1 d-none">Tặng 2.000 xu</div>
+                          </div>
+                          <div class="mant__content--info px-2">
+                            <a href="">
+                              <div class="name">Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...</div>
+                            </a>
+                            <div class="row m-0">
+                              <div class="col-10 p-0">
+                                <div class="row m-0">
+                                  <div class="col-6 p-0 my-auto">
+                                    <div class="price fw-semibold">299.000<span class="text-decoration-underline fw-semibold">đ</span></div>
+                                  </div>
+                                  <div class="col-6 p-0 my-auto">
+                                    <div class="price--sale text-center text-decoration-line-through d-none">299.000<span class="text-decoration-underline">đ</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-2 p-0">
+                                <div class="cart position-relative float-end">
+                                  <div class="img_cart"><img class="icon" src="./assets/image/cart.svg" alt="" /></div>
+                                  <div class="img_cart position-absolute top-0 start-0"><img class="icon" src="./assets/image/cart_red.svg" alt="" /></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-2 col__custorm--5 px-2">
+                        <div class="mant__content h-100 bg-white py-2">
+                          <div class="mant__content--show position-relative overflow-hidden">
+                            <div class="sale position-absolute px-1 z-1 mx-1">-15%</div>
+                            <a href="">
+                              <div class="position-relative w-100 h-100">
+                                <div class="img_thumbnail w-100 h-100">
+                                  <img src="./assets/image/anhsp.png" alt="" />
+                                </div>
+                                <div class="img_thumbnail position-absolute w-100 h-100 top-0">
+                                  <img src="./assets/image/anhsp.png" alt="" />
+                                </div>
+                              </div>
+                            </a>
+                            <div class="like position-absolute">
+                              <img class="icon" src="./assets/image/heart.svg" alt="" onmouseover="this.src='./assets/image/heart_red.svg'" onmouseout="this.src='./assets/image/heart.svg'" />
+                            </div>
+                            <div class="bixu position-absolute px-1 mx-1 d-none">Tặng 2.000 xu</div>
+                          </div>
+                          <div class="mant__content--info px-2">
+                            <a href="">
+                              <div class="name">Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...</div>
+                            </a>
+                            <div class="row m-0">
+                              <div class="col-10 p-0">
+                                <div class="row m-0">
+                                  <div class="col-6 p-0 my-auto">
+                                    <div class="price fw-semibold">299.000<span class="text-decoration-underline fw-semibold">đ</span></div>
+                                  </div>
+                                  <div class="col-6 p-0 my-auto">
+                                    <div class="price--sale text-center text-decoration-line-through d-none">299.000<span class="text-decoration-underline">đ</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-2 p-0">
+                                <div class="cart position-relative float-end">
+                                  <div class="img_cart"><img class="icon" src="./assets/image/cart.svg" alt="" /></div>
+                                  <div class="img_cart position-absolute top-0 start-0"><img class="icon" src="./assets/image/cart_red.svg" alt="" /></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-2 col__custorm--5 px-2">
+                        <div class="mant__content h-100 bg-white py-2">
+                          <div class="mant__content--show position-relative overflow-hidden">
+                            <div class="sale position-absolute px-1 z-1 mx-1">-15%</div>
+                            <a href="">
+                              <div class="position-relative w-100 h-100">
+                                <div class="img_thumbnail w-100 h-100">
+                                  <img src="./assets/image/anhsp.png" alt="" />
+                                </div>
+                                <div class="img_thumbnail position-absolute w-100 h-100 top-0">
+                                  <img src="./assets/image/anhsp.png" alt="" />
+                                </div>
+                              </div>
+                            </a>
+                            <div class="like position-absolute">
+                              <img class="icon" src="./assets/image/heart.svg" alt="" onmouseover="this.src='./assets/image/heart_red.svg'" onmouseout="this.src='./assets/image/heart.svg'" />
+                            </div>
+                            <div class="bixu position-absolute px-1 mx-1 d-none">Tặng 2.000 xu</div>
+                          </div>
+                          <div class="mant__content--info px-2">
+                            <a href="">
+                              <div class="name">Bỉm - Tã quần Merries cộng miếng size XL 38 + 6 miếng...</div>
+                            </a>
+                            <div class="row m-0">
+                              <div class="col-10 p-0">
+                                <div class="row m-0">
+                                  <div class="col-6 p-0 my-auto">
+                                    <div class="price fw-semibold">299.000<span class="text-decoration-underline fw-semibold">đ</span></div>
+                                  </div>
+                                  <div class="col-6 p-0 my-auto">
+                                    <div class="price--sale text-center text-decoration-line-through">299.000<span class="text-decoration-underline">đ</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-2 p-0">
+                                <div class="cart position-relative float-end">
+                                  <div class="img_cart"><img class="icon" src="./assets/image/cart.svg" alt="" /></div>
+                                  <div class="img_cart position-absolute top-0 start-0"><img class="icon" src="./assets/image/cart_red.svg" alt="" /></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail row row--maint container mx-auto pb-4">
+          <div class="col-12 py-4">
+            <span class="title">Chi tiết sản phẩm</span>
+          </div>
+          <div class="col-12">
+            <div class="row options">
+              <div class="col-1 me-5 active_info">
+                <span>Mô tả sản phẩm</span>
+              </div>
+              <div class="col-1">
+                <span>Thông tin chi tiết</span>
+              </div>
+
+              <div class="row description_product">
+                <div class="col-12 my-4">
+                  <p>
+                    Sau khi sinh xong cơ thể mẹ còn yếu nên những bồ đồ ôm sát cơ thể sẽ khiến mẹ cảm thấy khó chịu và gây ảnh hưởng đến quá trình hồi sức của mẹ. Bộ dài tay cho mẹ sau sinh Bibo's cừu
+                    hồng là lựa chọn hoàn hảo của mẹ trong giai đoạn này. Kiểu dáng rộng rãi kết hợp với thiết kế khóa kéo 2 bên ngực không chỉ đảm bảo mẹ được thoải mái nhất mà còn đem lại sự thuận
+                    tiện trong từng thao tác, giúp mẹ chăm bé dễ dàng hơn.
+                  </p>
+                </div>
+                <div class="col-12 image_detail text-center">
+                  <img src="./assets/image/image_productdetail.svg" alt="" />
+                </div>
+
+                <div class="see_more col-12">
+                  <div class="row">
+                    <div class="col-12 text-center">
+                      <span>Sữa Aptamil Đức số 2</span>
+                    </div>
+                    <div class="col-12 d-flex align-items-center position-relative">
+                      <span> Đặc điểm nổi bật của sản phẩm </span>
+                      <div class="btn_see--more p-0">
+                        <button>Xem thêm</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row info_product d-none">
+                <div class="col-10 my-4 ps-4">
+                  <div class="row">
+                    <div class="col-3 attribute"><span>Thương hiệu</span></div>
+                    <div class="col-9 attribute_value"><span>Aptamil</span></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3 attribute"><span>Xuất sứ thương hiệu</span></div>
+                    <div class="col-9 attribute_value"><span>France</span></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3 attribute"><span>Nơi sản xuất</span></div>
+                    <div class="col-9 attribute_value"><span>Pháp</span></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3 attribute"><span>Độ tuổi sử dụng</span></div>
+                    <div class="col-9 attribute_value"><span>Trên 12 tháng</span></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3 attribute"><span>Trọng lượng</span></div>
+                    <div class="col-9 attribute_value"><span>800g</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="border border-top">
+      <div class="footer">
+        <div class="maint__footer m-auto">
+          <div class="row row--maint m-0 pb-3">
+            <div class="col-12 px-0">
+              <div class="footer__top py-4">
+                <div class="row m-0">
+                  <div class="col-3">
+                    <div class="text-center">
+                      <img src="./assets/image/icon_chinh-hangFooter.svg" alt="" />
+                    </div>
+                    <div class="content text-center text-capitalize my-1">
+                      <div class="">100%</div>
+                      <div class="">Hàng chính hãng</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="text-center">
+                      <img src="./assets/image/icon_giao-hangFooter.svg" alt="" />
+                    </div>
+                    <div class="content text-center text-capitalize my-1">
+                      <div class="">Giao nội thành</div>
+                      <div class="">Siêu tốc 30 phút</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="text-center">
+                      <img src="./assets/image/icon_qua-tangFooter.svg" alt="" />
+                    </div>
+                    <div class="content text-center text-capitalize my-1">
+                      <div class="">Ưu đãi độc quyền</div>
+                      <div class="">Tích xu đổi quà</div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="text-center">
+                      <img src="./assets/image/icon_hot-dealFooter.svg" alt="" />
+                    </div>
+                    <div class="content text-center text-capitalize my-1">
+                      <div class="">Khuyến mãi ngập tràn</div>
+                      <div class="">Hot deal vô tận</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 px-0">
+              <div class="footer__middle">
+                <div class="row m-0">
+                  <div class="col-3">
+                    <div class="">
+                      <div class="title my-4 text-uppercase fw-bold fs-16">VỀ BIBOMART</div>
+                      <ul class="">
+                        <li class="my-3">
+                          <a href="" class="content">
+                            <span>Giới thiệu</span>
+                          </a>
+                        </li>
+                        <li class="my-3">
+                          <a href="" class="content">
+                            <span> Danh sách cửa hàng </span>
+                          </a>
+                        </li>
+                        <li class="my-3">
+                          <a href="" class="content">
+                            <span>Cẩm nang cho mẹ</span>
+                          </a>
+                        </li>
+                        <li class="my-3">
+                          <a href="" class="content">
+                            <span>Liên hệ</span>
+                          </a>
+                        </li>
+                        <li class="my-3">
+                          <a href="" class="content">
+                            <span>Bảo mật thông tin cá nhân</span>
+                          </a>
+                        </li>
+                        <li class="my-3">
+                          <a href="" class="content">
+                            <span>Sử dụng thông tin</span>
+                          </a>
+                        </li>
+                        <li class="my-3">
+                          <a href="" class="content">
+                            <span>Bản tin tuyển dụng</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="">
+                      <div class="title my-4 text-uppercase fw-bold fs-16">Hỗ trợ khách hàng</div>
+                      <ul class="">
+                        <li class="my-3">
+                          <a href="" class="content">
+                            <span>Hotline miễn phí: 1800 6886</span>
+                          </a>
+                        </li>
+                        <li class="my-3">
+                          <a href="" class="content">
+                            <span>Chính sách CSKH</span>
+                          </a>
+                        </li>
+                        <li class="my-3">
+                          <a href="" class="content">
+                            <span>Hướng dẫn đổi quà từ Bixu</span>
+                          </a>
+                        </li>
+                        <li class="my-3">
+                          <a href="" class="content">
+                            <span>CS đổi hàng và hoàn tiền</span>
+                          </a>
+                        </li>
+                        <li class="my-3">
+                          <a href="" class="content">
+                            <span>Chính sách bảo hành</span>
+                          </a>
+                        </li>
+                        <li class="my-3">
+                          <a href="" class="content">
+                            <span>Zalo & Hotline cửa hàng</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="">
+                      <div class="title my-4 text-uppercase fw-bold fs-16">Hệ thống tiện ích</div>
+                      <ul class="">
+                        <li class="my-3">
+                          <a href="" class="content">
+                            <span>Tra cứu hóa đơn điện tử</span>
+                          </a>
+                        </li>
+                        <li class="my-3">
+                          <a href="" class="content">
+                            <span>Kiểm tra đơn hàng</span>
+                          </a>
+                        </li>
+                        <li class="my-3">
+                          <a href="" class="content">
+                            <span>Hướng dẫn đặt hàng</span>
+                          </a>
+                        </li>
+                        <li class="my-3">
+                          <a href="#" class="content">
+                            <span class="text-uppercase fw-bold text-black fs-16"> Phương thức thanh toán </span>
+                          </a>
+                          <div class="row my-2">
+                            <div class="col-sm-4 col-md-3 p-0 payper">
+                              <img class="" src="./assets/image/icon_VISA.svg" alt="image" />
+                            </div>
+                            <div class="col-sm-4 col-md-3 p-0 payper">
+                              <img class="" src="./assets/image/icon_master-card.svg" alt="image" />
+                            </div>
+
+                            <div class="col-sm-4 col-md-3 p-0 payper">
+                              <img class="" src="./assets/image/icon_JBC.svg" alt="" />
+                            </div>
+
+                            <div class="col-sm-4 col-md-3 p-0 payper">
+                              <img src="./assets/image/icon_napas.svg" alt="" />
+                            </div>
+                          </div>
+                          <div class="row my-2">
+                            <div class="col-sm-4 col-md-3 p-0 payper">
+                              <img class="" src="./assets/image/icon_cod.svg" alt="" />
+                            </div>
+
+                            <div class="col-sm-4 col-md-3 p-0 payper">
+                              <img class="" src="./assets/image/icon_VNPAY.svg" alt="" />
+                            </div>
+
+                            <div class="col-sm-4 col-md-3 p-0 payper">
+                              <img class="" src="./assets/image/icon_zalo-pay.svg" alt="" />
+                            </div>
+
+                            <div class="col-sm-4 col-md-3 p-0 payper">
+                              <img class="" src="./assets/image/icon_momo.svg" alt="" />
+                            </div>
+                          </div>
+                        </li>
+                        <li class="my-3">
+                          <a href="" class="content">
+                            <span class="text-uppercase fw-bold text-black fs-16"> Đối tác vận chuyển </span>
+                          </a>
+                          <div class="row mt-2">
+                            <div class="col-sm-4 col-md-3">
+                              <div class="px-1 w-100">
+                                <img class="w-100" src="./assets/image/icon_grap.svg" alt="" />
+                              </div>
+                            </div>
+
+                            <div class="col-sm-4 col-md-3">
+                              <div class="px-1 w-100">
+                                <img class="w-100" src="./assets/image/icon_viettel-post.svg" alt="" />
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="">
+                      <div class="row row-gap-4 m-0">
+                        <div class="col-12 p-0">
+                          <div class="">
+                            <div class="title text-uppercase my-4 fw-bold fs-16">Kết nối với chúng tôi</div>
+                            <div class="row my-3">
+                              <div class="col-sm-4 col-md-3 col-lg-2 p-0">
+                                <a href="#" class="w-100">
+                                  <img class="custom-social w-100" src="./assets/image/logoFB.svg" alt="" />
+                                </a>
+                              </div>
+                              <div class="col-sm-4 col-md-3 col-lg-2 p-0">
+                                <a href="#" class="w-100">
+                                  <img class="custom-social w-100" src="./assets/image/logoTiktok.svg" alt="" />
+                                </a>
+                              </div>
+                              <div class="col-sm-4 col-md-3 col-lg-2 p-0">
+                                <a href="#" class="w-100">
+                                  <img class="custom-social w-100" src="./assets/image/logoMessenger.svg" alt="" />
+                                </a>
+                              </div>
+                              <div class="col-sm-4 col-md-3 col-lg-2 p-0">
+                                <a href="#" class="w-100">
+                                  <img class="custom-social w-100" src="./assets/image/logoYtb.svg" alt="" />
+                                </a>
+                              </div>
+
+                              <div class="col-sm-4 col-md-3 col-lg-2 p-0">
+                                <a href="#" class="w-100">
+                                  <img class="custom-social w-100" src="./assets/image/logoShopee.svg" alt="" />
+                                </a>
+                              </div>
+
+                              <div class="col-sm-4 col-md-3 col-lg-2 p-0">
+                                <a href="#" class="w-100">
+                                  <img class="custom-social w-100" src="./assets/image/logoLazada.svg" alt="" />
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 p-0">
+                          <div class="row m-0">
+                            <div class="mb-4 col-12 ps-0 text-uppercase fw-bold fs-16">Tải ứng dụng nhận ngay nhiều ưu đãi hấp dẫn</div>
+                            <div class="col-4 p-0 my-auto">
+                              <div class="w-100">
+                                <a href=""><img class="qr__footer w-100" src="./assets/image/Qr.png" alt="" /></a>
+                              </div>
+                            </div>
+                            <div class="dowload__right col-8 my-auto">
+                              <div class="row row-gap-2 m-0">
+                                <div class="col-12 p-0">
+                                  <div class="w-100">
+                                    <a href=""><img class="w-100" src="./assets/image/apstore.png" alt="" /></a>
+                                  </div>
+                                </div>
+                                <div class="col-12 p-0">
+                                  <div class="w-100">
+                                    <a href=""><img class="w-100" src="./assets/image/chphay.png" alt="" /></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 px-0">
+              <div class="footer__bottom py-4">
+                <div class="row row-gap-3 m-0">
+                  <div class="col-12">
+                    <div class="row m-0">
+                      <div class="col-6 p-0 mx-auto text-center">
+                        <div class="content">
+                          <div class="">Đơn vị chủ quản: Công ty cổ phần Bibomart TM</div>
+                          <div class="">Địa chỉ: 120 Trần Duy Hưng, Phường Trung Hòa, Quận Cầu Giấy, Hà Nội, Việt Nam</div>
+                          <div class="">Điện thoại: (024) 73091168 - Email: cskh@bibomart.com.vn</div>
+                          <div class="">Mã số thuế / Mã số doanh nghiệp: 0108024302, Ngày cấp: 16/10/2017, Sở KHĐTHN</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="row m-0">
+                      <div class="col-6 p-0 mx-auto">
+                        <div class="row m-0">
+                          <div class="col-2 px-1 my-auto col__custorm--5 text-center img_footer">
+                            <img class="w-100 h-100" src="./assets/image/footer.svg" alt="" />
+                          </div>
+                          <div class="col-2 px-1 my-auto col__custorm--5 text-center img_footer">
+                            <img class="w-100 h-100" src="./assets/image/footer_1.svg" alt="" />
+                          </div>
+                          <div class="col-2 px-1 my-auto col__custorm--5 text-center img_footer">
+                            <img class="w-100 h-100" src="./assets/image/footer_2.svg" alt="" />
+                          </div>
+                          <div class="col-2 px-1 my-auto col__custorm--5 text-center img_footer">
+                            <img class="w-100 h-100" src="./assets/image/footer_3.svg" alt="" />
+                          </div>
+                          <div class="col-2 px-1 my-auto col__custorm--5 text-center img_footer">
+                            <img class="w-100 h-100" src="./assets/image/footer_4.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="button__go--home position-fixed">
+      <div class="row m-0 row-gap-2">
+        <div class="col-12 p-0">
+          <div class="bg-white text-center">
+            <a href=""><img src="./assets/image/image_gif_qua.gif" alt="" /></a>
+          </div>
+        </div>
+        <div class="col-12 p-0">
+          <div class="zalo bg-white overflow-hidden">
+            <a href=""><img src="./assets/image/Zalo_icon.svg" alt="" /></a>
+          </div>
+        </div>
+        <div class="col-12 p-0">
+          <div class="bg-white text-center icon__gohome">
+            <a href=""><i class="bi bi-chevron-up mx-auto"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+</html>

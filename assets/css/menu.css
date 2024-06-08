@@ -1,8 +1,61 @@
-.menu--hover:hover span{
-    color: #DD354B;
-} 
+.nav {
+  cursor: default;
+  display: inline-block;
+  position: relative;
+  z-index: 500;
+}
+.nav > li {
+  float: left;
+}
+.mega-menu {
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 0 0 3px 3px;
+  opacity: 0;
+  position: absolute;
+  transition: all .3s ease .15s;
+  visibility: hidden;
+  width: 81% !important;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px #52525220;
+  text-align: left;
+  left: 149px !important;
+}
+li:hover > .mega-menu {
+  opacity: 1;
+  overflow: visible;
+  visibility: visible;
+}
+.nav-column {
+  float: left;
+  padding: 13px 0px 0px 23px;
+  width: 25%;
+  min-height: 225px;
+  overflow: hidden;
+}
+.nav-column ul li{
+  line-height: 36px;
+}
+.nav-column a:hover {
+  color: #ff8c82;
+}
+.nav-column span {
+  font-size: 0.875rem;
+  color: #525252;
+  line-height: 32px;
+  font-weight: 700;
+}
+.view--all{
+  color: #F12C2C;
+}
+.view--all i{
+  font-size: 12px;
+}
 
+.nav-column:has(li:hover) .title_menu-child > span {
+  color: #ff8c82;
+}
 
-.menu>li:hover .custom-menu-2{
-    display: block !important;
+.nav-column a:hover > span {
+  color: #ff8c82;
 }
