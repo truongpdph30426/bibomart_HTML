@@ -1,0 +1,104 @@
+.notify_cart span,
+.notify_cart a {
+  color: #3c6e39;
+}
+
+.notify_cart {
+  background: #deebdd;
+  padding: 10px 24px;
+}
+.payment {
+  background: #f6f6f6;
+  padding-top: 50px;
+  font-size: 1rem;
+}
+.icon_trash img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.cart--products div {
+  margin: auto;
+}
+.cart--title {
+  padding: 15px 0;
+}
+.payment-child {
+  padding: 10px 0;
+  font-weight: 500;
+  color: #525252;
+}
+.payment-child > div:nth-child(1) {
+  text-align: left;
+}
+.payment-child > div:nth-child(2) {
+  text-align: right;
+}
+.discount-code img {
+  width: 24px;
+}
+.discount-text span {
+  font-weight: 400;
+  color: #7f7f7f;
+}
+.payment .payment-btn button {
+  font-size: 1.125rem;
+  font-weight: 400;
+  height: 50px;
+  color: #ffffff;
+  border: none;
+  background: #525252;
+  transition: all 0.1s ease;
+}
+.payment .payment-btn button:hover {
+  background: #ff8c82;
+}
+.cart--title {
+  font-size: 1rem;
+  color: #525252;
+  font-weight: 400;
+  border-bottom: 1px solid #e5e5e5;
+}
+.cart--title .quatity--text span {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.sum-price span {
+  font-weight: 700;
+}
+.sum-price .price span {
+  font-size: 1rem;
+  color: #ff8c82;
+}
+.sum-price .vat span {
+  font-weight: 400;
+  color: #919191;
+}
+.payment .bixu span {
+  color: #ff9700;
+}
+.cart-info .bixu span {
+  color: #ff9700;
+  font-size: 0.875rem;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+.payment-child .giam_gia span {
+  font-weight: 400;
+}
+.price_cart .new span {
+  font-weight: 500;
+  color: #525252;
+  font-size: 0.875rem;
+}
+.price_cart .old span{
+  font-size: 0.75rem;
+  color: #7f7f7f;
+}

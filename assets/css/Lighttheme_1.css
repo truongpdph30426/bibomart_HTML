@@ -644,7 +644,7 @@ padding: 0px;
 }
 #lighttheme .fixed {
   position: fixed;
-  z-index: 5;
+  z-index: 99999;
   top: 0px;
   width: 100%;
 }

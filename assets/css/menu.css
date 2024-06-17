@@ -52,7 +52,7 @@ li:hover > .mega-menu {
   font-size: 12px;
 }
 
-.nav-column:has(li:hover) .title_menu-child > span {
+.box-class-menu:has(li:hover) .title_menu-child > span {
   color: #ff8c82;
 }
 
